@@ -426,6 +426,9 @@ button {
   width: 90px;
 }
 
+.hero {
+  margin-bottom: 100px;
+}
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
@@ -485,4 +488,210 @@ button {
 .hero-button__read {
   font-size: 18px;
   line-height: 25px;
+}
+
+.recomendations {
+  margin: 0;
+  margin-top: 0;
+}
+
+.book-right {
+  display: flex;
+  flex-direction: column;
+  height: 942px;
+  width: 360px;
+  mix-blend-mode: normal;
+  border-radius: 8px;
+  background-color: #f8f4f4;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+.book-right__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.book-left {
+  width: 748px;
+  height: 865px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.book-left__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.book-leftcard {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 260px;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  padding: 11px;
+}
+.book-leftcard__image {
+  width: 160px;
+  height: 238px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.book-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.book-rightcard {
+  display: flex;
+  align-items: center;
+  width: 287px;
+  border: none;
+  height: 182px;
+  margin-bottom: 32px;
+}
+.book-rightcard__image {
+  width: 120px;
+  height: 182px;
+  mix-blend-mode: normal;
+  border-radius: 5.96628px;
+  margin-right: 26px;
+}
+
+.leftcard__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  margin-top: 0;
+}
+.leftcard-bottom {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 167px;
+  margin-right: 25px;
+}
+.leftcard-button {
+  border-radius: 2000px;
+  color: #fff;
+  background-color: #183B56;
+  /*margin-bottom: 26px */
+  border: none;
+  width: 101px;
+  height: 36px;
+  padding: 7px 20px;
+  margin-right: 25px;
+}
+.leftcard-price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+  margin-bottom: 24px;
+}
+.leftcard-text {
+  margin-bottom: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 0;
+}
+
+.leftcard__description {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.leftcard-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 358px;
+  height: 260px;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  margin-right: 32px;
+  margin-bottom: 36px;
+  margin: 0;
+}
+
+.rightcard__description {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.rightcard__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 0;
+  letter-spacing: 0.2px;
+}
+.rightcard-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 358px;
+  height: 260px;
+  border: 1px solid #ECEEF2;
+  border-radius: 8px;
+  margin-right: 32px;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+.rightcard__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.rightcard-bottom {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 167px;
+  margin-right: 25px;
+}
+.rightcard-button {
+  border-radius: 2000px;
+  color: #fff;
+  background-color: #183B56;
+  /*margin-bottom: 26px */
+  border: none;
+  width: 101px;
+  height: 36px;
+  padding: 7px 20px;
+  margin-right: 25px;
+}
+.rightcard-price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+  margin-bottom: 22px;
 }/*# sourceMappingURL=style.css.map */
