@@ -366,15 +366,9 @@ p {
   color: #5A7184;
 }
 
-button {
-  border: 2px solid #1565D8;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 13px 28px 13px 28px;
-  background-color: #fff;
+a {
+  text-decoration: none;
   color: #1565D8;
-  font-style: normal;
-  font-weight: 700;
 }
 
 .navbar {
@@ -387,7 +381,7 @@ button {
   align-items: center;
   justify-content: space-between;
   padding-top: 47px;
-  padding-bottom: 100px;
+  padding-bottom: 109px;
 }
 .navbar-menu {
   display: flex;
@@ -420,6 +414,16 @@ button {
   line-height: 22px;
   font-size: 16px;
   line-height: 22px;
+  border: 2px solid #1565D8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 28px 13px 28px;
+  background-color: #fff;
+  color: #1565D8;
+  font-style: normal;
+  font-weight: 700;
+  width: 147px;
+  height: 48px;
 }
 
 .logo-image {
@@ -443,6 +447,7 @@ button {
   justify-content: center;
   align-items: center;
   background-color: #f8f4f4;
+  margin-top: -11px;
 }
 .hero-image {
   background: rgba(206, 197, 197, 0);
@@ -451,7 +456,7 @@ button {
 .hero-text {
   margin-bottom: 56px;
 }
-.hero-autor__text {
+.hero-autor {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -473,6 +478,7 @@ button {
 }
 .hero-description {
   width: 585px;
+  margin-top: 36px;
 }
 .hero-button {
   display: flex;
@@ -484,8 +490,27 @@ button {
   color: #fff;
   font-size: 16px;
   line-height: 22px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 28px 13px 28px;
+  font-style: normal;
+  font-weight: 700;
+  border: 2px solid #1565D8;
+  width: 209px;
+  height: 58px;
 }
 .hero-button__read {
+  color: #1565D8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 28px 13px 28px;
+  border: 2px solid #1565D8;
+  background-color: #fff;
+  width: 234px;
+  height: 58px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
   font-size: 18px;
   line-height: 25px;
 }
@@ -493,6 +518,33 @@ button {
 .recomendations {
   margin: 0;
   margin-top: 0;
+}
+.recomendations-more {
+  width: 751px;
+  height: 72px;
+  border: 2px solid #1565D8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 13px 28px 13px 28px;
+  background-color: #fff;
+  color: #1565D8;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.recomendations-favorite {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.recomendations-line {
+  border: 1px solid #ECEEF2;
+  margin: 18px 24px 25px 0;
 }
 
 .book-right {
@@ -522,8 +574,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
-.book-left__title {
+.book-title {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -556,10 +609,16 @@ button {
 .book-rightcard {
   display: flex;
   align-items: center;
-  width: 287px;
   border: none;
   height: 182px;
   margin-bottom: 32px;
+  width: 96%;
+}
+.book-rightcard:last-child {
+  margin-bottom: 0;
+}
+.book-rightcard--end {
+  margin-bottom: 0;
 }
 .book-rightcard__image {
   width: 120px;
@@ -569,7 +628,7 @@ button {
   margin-right: 26px;
 }
 
-.leftcard__title {
+.leftcard-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -615,10 +674,25 @@ button {
   margin-top: 0;
 }
 
-.leftcard__description {
+.leftcard-description {
   display: flex;
   align-items: start;
   flex-direction: column;
+}
+.leftcard-description--w2 {
+  width: 33%;
+}
+.leftcard-description--w3 {
+  width: 46%;
+}
+.leftcard-description--w4 {
+  width: 44%;
+}
+.leftcard-description--w5 {
+  width: 44%;
+}
+.leftcard-description--w6 {
+  width: 44%;
 }
 .leftcard-card {
   display: flex;
@@ -633,12 +707,12 @@ button {
   margin: 0;
 }
 
-.rightcard__description {
+.rightcard-description {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.rightcard__title {
+.rightcard-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

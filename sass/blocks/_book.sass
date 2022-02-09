@@ -1,6 +1,31 @@
 .recomendations
   margin: 0
   margin-top: 0
+  &-more
+    width: 751px
+    height: 72px
+    border: 2px solid $button-color
+    box-sizing: border-box
+    border-radius: 8px
+    padding: 13px 28px 13px 28px
+    background-color: $light
+    color: $button-color
+    font-family: Roboto Condensed
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+
+  &-favorite
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+  &-line
+      border: 1px solid #ECEEF2
+      margin: 18px 24px 25px 0
 .book
   &-right
     display: flex
@@ -27,15 +52,16 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    &__title
-      font-family: Roboto Condensed
-      font-style: normal
-      font-weight: bold
-      font-size: 32px
-      line-height: 40px
-      letter-spacing: 0.2px
-      margin-bottom: 30px
-      margin-top: 0
+    margin-bottom: 5px
+  &-title
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    margin-bottom: 30px
+    margin-top: 0
 
   &-leftcard
     display: flex
@@ -45,6 +71,8 @@
     border: 1px solid #ECEEF2
     border-radius: 8px
     padding: 11px
+    
+
     &__image
       width: 160px
       height: 238px
@@ -58,18 +86,23 @@
   &-rightcard
     display: flex
     align-items: center
-    width: 287px
     border: none
     height: 182px
     margin-bottom: 32px
+    width: 96%
+    &:last-child
+      margin-bottom: 0
+    &--end
+      margin-bottom: 0
     &__image
       width: 120px
       height: 182px
       mix-blend-mode: normal
       border-radius: 5.96628px
       margin-right: 26px
+
 .leftcard
-  &__title
+  &-title
     font-family: Roboto
     font-style: normal
     font-weight: 500
@@ -110,15 +143,23 @@
     line-height: 22px
     margin-top: 0
 
-.left
-  &-card
-
 .leftcard
-  &__description
+  &-description
     display: flex
     align-items: start
     flex-direction: column
+    &--w1
 
+    &--w2
+      width: 33%
+    &--w3
+      width: 46%
+    &--w4
+      width: 44%
+    &--w5
+      width: 44%
+    &--w6
+      width: 44%
   &-card
     display: flex
     justify-content: space-between
@@ -131,12 +172,12 @@
     margin-bottom: 36px
     margin: 0
 .rightcard
-  &__description
+  &-description
     display: flex
     align-items: start
     flex-direction: column
 
-  &__title
+  &-title
     font-family: Roboto
     font-style: normal
     font-weight: 500
