@@ -1,58 +1,102 @@
-.theme
-  margin-bottom: 100px
-  &-line
-    width: 1140px
-    height: 1px
-    border: 1px solid #ECEEF2
-    margin: 70px 0 60px 0
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  background: #fff
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+.swiper
+  width: 100%
+  min-height: 240px
+  margin-left: auto
+  margin-right: auto
+  &-button
+    &-right
+      &::after
+        content: ''
+    &-left
+      &::after
+        content: ''
+.slider
   &-wrapper
-    display: flex
-    justify-content: space-between
-  &-item
+    position: relative
+    min-height: 240px
+.theme
+  padding-bottom: 101px
+  padding-top: 49px
+  
+  &-slide
     display: flex
     align-items: center
     flex-direction: column
-    width: 265px
-    height: 240px
+    width: 100%
+    min-height: 240px
     border: 1px solid #ECEEF2
-    box-sizing: border-box
     border-radius: 8px
-    padding: 40px 14px 14px 14px
-  &-image
-    margin-bottom: 40px
-  &-title
-    margin-bottom: 5px
-    margin-top: 0
-  &-description
-    margin-top: 0
-    font-size: 16px
-  &-button
-    position: absolute
-    transform: translateY(79%)
-    width: 56px
-    height: 56px
-    background-repeat: no-repeat
-    background-size: 14px
-    background-position: center
-    border: none
-    background-color: #fff
-    cursor: pointer
-    
-    
+    &__link
+      text-decoration: none
+    &__title
+      margin: 0
+      padding: 0
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-bottom: 11px
+    &__subtitle
+      margin: 0
+      padding: 0
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: #5A7184
 
-    
-    &--left
-      background-image: url(../img/stroke-left.svg)
-      left: -28px
-      padding-left: 10px
-      border-radius: 2000px
+  &-swiper
+    &-button
+      position: absolute
+      top: 51%
+      transform: translateY(-50%)
+      width: 56px
+      height: 56px
+      background-size: 76px
+      z-index: 99
+      border-radius: 50%
+      background-color: #fff
+      background-size: 56px
       box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
-      
-    &--right
-      background-image: url(../img/stroke-right.svg)
-      right: -1113px
-      padding-right: 10px
-      border-radius: 2000px
-      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
-      
-      
+      text-align: center
+      vertical-align: center
+      padding: 20px
+      cursor: pointer
+      &-prev
+        background-repeat: no-repeat
+        background-position: top
+        left: -27px
+        margin-top: -3px
+      &-next
+        background-repeat: no-repeat
+        background-position: center
+        right: -31px
+  &__icon
+    margin-bottom: 41px
+    margin-top: 38px
+.swiper
+  &-button
+    &-disabled
+      display: none
+.icon
+  width: 18px
+
+
+.index
+  border: 1px solid #ECEEF2
+
+

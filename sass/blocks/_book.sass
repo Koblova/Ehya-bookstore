@@ -2,7 +2,7 @@
   margin: 0
   margin-top: 0
   &-more
-    width: 751px
+    max-width: 751px
     height: 72px
     border: 2px solid $button-color
     box-sizing: border-box
@@ -23,6 +23,10 @@
     line-height: 20px
     text-align: center
     letter-spacing: 0.2px
+    &:hover
+      color: #ffaa0041
+    &:active
+      color: #faad1321
   &-line
       border: 1px solid #ECEEF2
       margin: 18px 24px 25px 0
@@ -69,7 +73,7 @@
     display: flex
     align-items: center
     width: 358px
-    height: 260px
+    min-height: 260px
     border: 1px solid #ECEEF2
     border-radius: 8px
     padding: 11px
@@ -128,6 +132,10 @@
     height: 36px
     padding: 7px 20px
     margin-right: 25px
+    &:hover
+      color: #ffaa0041
+    &:active
+      color: #faad1321
   &-price
     font-family: Roboto Condensed
     font-style: normal
@@ -162,6 +170,11 @@
       width: 44%
     &--w6
       width: 44%
+  &__icon
+    fill: #959EAD
+    cursor: pointer
+
+
   &-card
     display: flex
     justify-content: space-between
@@ -226,6 +239,10 @@
     height: 36px
     padding: 7px 20px
     margin-right: 25px
+    &:hover
+      color: #ffaa0041
+    &:active
+      color: #faad1321
   &-price
     font-family: Roboto Condensed
     font-style: normal
@@ -234,5 +251,12 @@
     line-height: 24px
     color: $button-color
     margin-bottom: 22px
+.like
+  fill: #aaa9a9
+  cursor: pointer
+  &--active
+    fill: #faad1321
+
+
 
   

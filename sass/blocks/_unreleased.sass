@@ -1,47 +1,60 @@
 .unreleased
   background-color: $text-color
-  margin: 60px 0 70px 0
-  width: 100%
-  padding: 60px 0 60px 0
-  height: 548px
-  &-top
-    display: flex
-  &-title
+  padding-top: 60px
+  padding-bottom: 73px
+  &-wrapper
+    position: relative
+  &__book
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10px
+    background-color: $text-color
+    height: 300px
+
+    &--3
+      width: 314px
+      height: 300px
+  &-swiper
+    &__wrapper
+      max-height: 300px
+    &-button
+      position: absolute
+      top: -21%
+      transform: translateY(-82%)
+      width: 56px
+      height: 56px
+      background-size: 52px
+      color: #fff
+      cursor: pointer
+      &-prev
+        background-image: url(../img/button-left.svg)
+        background-repeat: no-repeat
+        background-position: top
+        right: -4px
+        left: 88.6%
+      &-next
+        background-image: url(../img/button-right.svg)
+        background-repeat: no-repeat
+        background-position: center
+        right: -1px
+  &__title
     font-family: Roboto Condensed
     font-style: normal
     font-weight: bold
     font-size: 36px
     line-height: 48px
     letter-spacing: 0.2px
-    color: #fff
-    margin-top: 0
-    margin-bottom: 57px
+    color: #FFFFFF
+    margin: 0
+    padding: 0
+    margin-bottom: 61px
+.swiper
+  &-slide
+    height: 300px
+    &--un
+      min-height: 300px
+      border-radius: 10px
 
-  &-button
-    display: flex
-    flex-direction: row
-    justify-content: flex-start
-  &-gallery
-    display: flex
-    justify-content: space-around
-    &__image
-      width: 232px
-  &-button
-    position: absolute
-    transform: translateY(-5%)
-    width: 56px
-    height: 56px
-    background-repeat: no-repeat
-    background-size: 55px
-    background-position: center
-    border: none
-    background-color: transparent
-    cursor: pointer
-    &--left
-      background-image: url(../img/button-left.svg)
-      left: 984px
-      padding-left: 100px
-    &--right
-      background-image: url(../img/button-right.svg)
-      right: -1112px
-      padding-right: 100px
+
+
