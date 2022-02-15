@@ -1809,7 +1809,7 @@ a.link:active {
     z-index: 99999999;
     position: absolute;
     width: 30%;
-    height: 49%;
+    height: 73%;
     margin-left: 5px;
   }
   .book-leftcard--w2 {
@@ -1993,10 +1993,6 @@ a.link:active {
   .unreleased {
     padding-top: 47px;
     padding-bottom: 135px;
-    padding-top: 47px;
-    padding-bottom: 135px;
-    padding-top: 47px;
-    padding-bottom: 135px;
   }
   .unreleased-book {
     width: 72%;
@@ -2022,6 +2018,8 @@ a.link:active {
   .unreleased-swiper-button-prev {
     left: 28.3%;
     margin-top: 4px;
+    padding-top: 47px;
+    padding-bottom: 135px;
   }
   .unreleased__title {
     font-size: 28px;
@@ -2030,6 +2028,8 @@ a.link:active {
     letter-spacing: 0.2px;
     margin-bottom: 44px;
     margin-left: 0;
+    padding-top: 47px;
+    padding-bottom: 135px;
   }
   .unreleased__title {
     font-size: 28px;
@@ -2195,6 +2195,7 @@ a.link:active {
     margin-top: 63px;
     text-align: center;
     align-items: center;
+    margin-right: 2px;
   }
   .blog-wrapper {
     flex-direction: column;
@@ -2202,19 +2203,38 @@ a.link:active {
   .blog-title {
     font-size: 28px;
     line-height: 36px;
+    margin-right: 1px;
+    margin-bottom: 49px;
+  }
+  .blog-button {
+    position: absolute;
+    margin-top: 800px;
   }
 
   .big-title {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 10px;
+    margin-left: -33px;
   }
   .big-description {
     font-weight: normal;
     font-size: 12px;
     line-height: 24px;
+    text-align: left;
+    margin-left: -2px;
+    letter-spacing: 0px;
   }
   .big-text {
     align-items: start;
+  }
+  .big-blog {
+    margin-right: 8px;
+    margin-left: 6px;
+  }
+  .big-image {
+    max-height: 120px;
+    margin-bottom: 19px;
   }
 
   .small-description {
@@ -2353,11 +2373,11 @@ a.link:active {
   .footer-bottom {
     display: none;
   }
-  .footer-wrapper {
+  .footer-bottom-wrapper {
     margin-bottom: 0;
     justify-content: start;
   }
-  .footer__main-item {
+  .footer-bottom__main-item {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -2365,7 +2385,7 @@ a.link:active {
     align-items: center;
     margin-top: 0;
   }
-  .footer__main-text {
+  .footer-bottom__main-text {
     text-align: center;
   }
 
