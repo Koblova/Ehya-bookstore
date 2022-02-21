@@ -13,18 +13,26 @@
   <title>Ehya</title>
 </head>
 <body>
-<header class="navbar">
+<header class="navbar navbar--mobile_fixed">
   <div class="container">
     <div class="navbar-top">
       <a href="/" class="logo"><img src="img/logo.svg" alt="Logo: Ehya" class="logo__image"></a>
+      <button class="menu-button navbar-top__menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
       <div class="navbar-bottom">
-         <ul class="navbar navbar-menu">
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
-         </ul>
-         </div>
+        <div class="container">
+          <ul class="navbar navbar-menu navbar-menu navbar-menu--left">
+              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
+              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
+              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+          </ul>
+        </div>
+      </div>
     <button class="navbar-button" data-toggle="modal">Получить</button>
+
     </div>
   </div>
 </header>
@@ -477,9 +485,9 @@
               <img src="img/small-button.svg" alt="Button play" class=" small-button1">
             </div>
 
-            <div class="small-description">
+            <div class="small-item">
             <div class="small-top">
-              <div class="small-title">Emelda Scandroot</div>
+              <div class="small-top__title">Emelda Scandroot</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
             <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
@@ -493,9 +501,9 @@
             <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/small-button.svg" alt="Button play" class="small-button2">
         </div>
-          <div class="small-description">
+          <div class="small-item">
             <div class="small-top">
-              <div class="small-title">Mar Rueda</div>
+              <div class="small-top__title">Mar Rueda</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
             <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
@@ -507,9 +515,9 @@
               <script src="https://www.youtube.com/iframe_api"></script>
               <img src="img/small-button.svg" alt="Button play" class="small-button3">
             </div>
-            <div class="small-description">
+            <div class="small-item">
               <div class="small-top">
-                <div class="small-title">Nembo Lukeni</div>
+                <div class="small-top__title">Nembo Lukeni</div>
                 <div class="small-text">Author of Books Tittle</div>
               </div>
               <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
@@ -619,7 +627,7 @@
             </svg> 
           </div>
           <form action="#" class="subscription-form">
-            <input type="text" class="subscription-input" placeholder="Ваш Emile">
+            <input type="text" class="subscription-input" placeholder="Ваш Emaill">
 
             
             <button class="subscription-button" data-toggle="modal">

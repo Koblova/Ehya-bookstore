@@ -2,8 +2,8 @@ $(document).ready(function () {
   var playerbig;
   $(".video-play").on("click", function onYouTubeIframeAPIReady() {
     player0 = new YT.Player("playerbig", {
-      height: "308px",
-      width: "1005px",
+      height: "100%",
+      width: "100%",
       videoId: "DSG28w5Hr5U",
       events: {
         
@@ -14,8 +14,8 @@ $(document).ready(function () {
   var playersmall1;
   $(".small-button1").on("click", function onYouTubeIframeAPIReady() {
     player0 = new YT.Player("playersmall1", {
-      height: "200px",
-      width: "315px",
+      height: "100%",
+      width: "100%",
       videoId: "DSG28w5Hr5U",
       events: {
         
@@ -26,8 +26,8 @@ $(document).ready(function () {
   var playersmall2;
   $(".small-button2").on("click", function onYouTubeIframeAPIReady() {
     player0 = new YT.Player("playersmall2", {
-      height: "200px",
-      width: "315px",
+      height: "100%",
+      width: "100%",
       videoId: "DSG28w5Hr5U",
       events: {
         
@@ -38,8 +38,8 @@ $(document).ready(function () {
   var playersmall3;
   $(".small-button3").on("click", function onYouTubeIframeAPIReady() {
     player0 = new YT.Player("playersmall3", {
-      height: "200px",
-      width: "315px",
+      height: "100%",
+      width: "100%",
       videoId: "DSG28w5Hr5U",
       events: {
 
@@ -122,6 +122,19 @@ $(document).ready(function () {
         },
       },
     })})
+
+    var menuButton = document.querySelector(".menu-button");
+    menuButton.addEventListener("click", function () {
+      document
+        .querySelector(".navbar-bottom")
+        .classList.toggle("navbar-bottom--visible");
+    });
+  
+   /* var menuButton = document.querySelector(".button-mobile");
+    menuButton.addEventListener("click", function () {
+      document.querySelector("body").classList.toggle("body--hidden");
+    });*/
+
     var swiper = new Swiper(".theme-swiper", {
       direction: "horizontal",
       spaceBetween: 26,

@@ -32,20 +32,25 @@
   &-small
     
 .small
+  &-item
+    display: flex
+    justify-content: space-between
   &-wrapper
     display: flex
     justify-content: space-between
     max-width: 1005px
     margin-left: 70px
     margin-right: 50px
-  &-title
-    font-family: Roboto
-    font-style: normal
-    font-weight: 500
-    font-size: 22px
-    line-height: 32px
-    margin-bottom: 10px
-    color: $text-color
+  &-top
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      margin-bottom: 10px
+      color: $text-color
+      margin-right: 120px
   &-text
     font-family: Open Sans
     font-style: normal
