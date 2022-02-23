@@ -1047,6 +1047,10 @@ a.link:active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.history-item {
+  position: relative;
+  z-index: 1;
+}
 .history-top {
   display: flex;
   justify-content: space-between;
@@ -1076,6 +1080,7 @@ a.link:active {
 .history-big {
   margin-left: 69px;
   margin-bottom: 27px;
+  position: relative;
 }
 .small-item {
   display: flex;
@@ -1112,8 +1117,8 @@ a.link:active {
 }
 .small-button1 {
   position: absolute;
-  transform: translateY(224%);
-  left: 404px;
+  top: 43%;
+  left: 46%;
   background-repeat: no-repeat;
   background-size: 56px;
   background-position: center;
@@ -1123,8 +1128,8 @@ a.link:active {
 }
 .small-button2 {
   position: absolute;
-  transform: translateY(221%);
-  left: 746px;
+  top: 43%;
+  left: 46%;
   background-repeat: no-repeat;
   background-size: 275px;
   background-position: center;
@@ -1134,8 +1139,8 @@ a.link:active {
 }
 .small-button3 {
   position: absolute;
-  transform: translateY(225%);
-  left: 1093px;
+  top: 43%;
+  left: 46%;
   background-repeat: no-repeat;
   background-size: 275px;
   background-position: center;
@@ -1150,8 +1155,8 @@ a.link:active {
 }
 .img-big--button {
   position: absolute;
-  transform: translateY(140%);
-  left: 714px;
+  top: 37%;
+  left: 46%;
   background-repeat: no-repeat;
   background-size: 275px;
   background-position: center;
@@ -1690,6 +1695,7 @@ a.link:active {
   }
   .book-left {
     width: 650px;
+    height: 820px;
   }
   .book-leftcard {
     width: 318px;
@@ -1705,6 +1711,9 @@ a.link:active {
   .book-leftcard-text {
     margin-bottom: 15px;
   }
+  .book-rightcard {
+    margin-bottom: 13px;
+  }
   .book-rightcard__image {
     width: 115px;
     height: 177px;
@@ -1715,6 +1724,7 @@ a.link:active {
   .book-right {
     width: 278px;
     padding-left: 15px;
+    height: 897px;
   }
   .book-rightcard__image {
     margin-right: 16px;
@@ -1824,21 +1834,8 @@ a.link:active {
     font-size: 20px;
   }
 
-  .img-big--button {
-    left: 550px;
-  }
-
   .small-top__title {
     font-size: 20px;
-  }
-  .small-button1 {
-    left: 263px;
-  }
-  .small-button2 {
-    left: 588px;
-  }
-  .small-button3 {
-    left: 908px;
   }
   .small-image {
     margin-right: 10px;
@@ -1989,20 +1986,6 @@ a.link:active {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .img-big--button {
-    left: 450px;
-    transform: translateY(80%);
-  }
-
-  .small-button1 {
-    left: 245px;
-  }
-  .small-button2 {
-    left: 485px;
-  }
-  .small-button3 {
-    left: 725px;
-  }
   .small-top__title {
     margin-right: 0;
   }
@@ -2128,7 +2111,7 @@ a.link:active {
   }
   .hero-right {
     margin-top: 22px;
-    width: 280px;
+    width: 100%;
   }
   .hero-wrapper {
     flex-direction: column;
@@ -2189,11 +2172,6 @@ a.link:active {
     height: 330px;
   }
 
-  .background-image {
-    width: 30%;
-    height: 100%;
-  }
-
   .recomendations {
     margin-top: -45px;
     margin-bottom: 54px;
@@ -2206,6 +2184,7 @@ a.link:active {
     letter-spacing: 0.2px;
     border-radius: 8px;
     background: rgba(5, 0, 255, 0.1);
+    margin-top: 123px;
   }
   .recomendations-title__button {
     color: #1565D8;
@@ -2218,7 +2197,8 @@ a.link:active {
     line-height: 36px;
   }
   .recomendations-favorite {
-    margin-left: -20px;
+    margin: 0;
+    padding-bottom: 20px;
   }
 
   .book {
@@ -2238,13 +2218,15 @@ a.link:active {
   .book-wrapper {
     flex-direction: column;
     flex-wrap: nowrap;
+    width: 100%;
   }
   .book-leftcard {
     flex-direction: column;
     align-items: center;
     padding: 16px;
-    width: 280px;
+    width: 100%;
     max-height: 312px;
+    min-height: 442px;
   }
   .book-leftcard-title {
     font-weight: 500;
@@ -2257,8 +2239,8 @@ a.link:active {
     margin-top: -41px;
     z-index: 98;
     position: absolute;
-    width: 30%;
-    height: 53%;
+    width: 200px;
+    height: 265px;
     margin-left: 5px;
   }
   .book-leftcard--w2 {
@@ -2283,6 +2265,7 @@ a.link:active {
     padding-left: 16px;
     margin-top: -29px;
     height: 797px;
+    flex-direction: column;
   }
   .book-rightcard {
     margin-bottom: -4px;
@@ -2307,7 +2290,7 @@ a.link:active {
   .leftcard-description {
     text-align: center;
     align-items: center;
-    margin-top: 112px;
+    margin-top: 235px;
   }
   .leftcard-text {
     margin-bottom: 16px;
@@ -2388,10 +2371,10 @@ a.link:active {
     padding: 15px 15px;
   }
   .theme-swiper-button-next {
-    right: 93px;
+    right: 150px;
   }
   .theme-swiper-button-prev {
-    left: 93px;
+    left: 150px;
     margin-top: 0px;
   }
   .theme-swiper__wrapper {
@@ -2405,10 +2388,6 @@ a.link:active {
   .swiper-slide--un {
     width: 206px;
   }
-
-  .swiper-slide--un {
-    width: 205px;
-  }
   .swiper-swiper-button {
     top: 124%;
   }
@@ -2417,20 +2396,6 @@ a.link:active {
   }
   .swiper-swiper-button-prev {
     left: 93px;
-  }
-  .swiper-slide--therd {
-    order: -1;
-  }
-  .swiper-slide--first {
-    order: -3;
-    margin-top: 10px;
-  }
-  .swiper-slide--second {
-    order: -2;
-    margin-top: 10px;
-  }
-  .swiper-slide--forth {
-    order: 0;
   }
 
   .slider-wrapper {
@@ -2462,13 +2427,13 @@ a.link:active {
     top: 126%;
   }
   .unreleased-swiper-button-next {
-    right: 30%;
+    right: 40%;
   }
   .unreleased-swiper-button-prev {
-    left: 28.3%;
+    left: 40%;
     margin-top: 4px;
     padding-top: 47px;
-    padding-bottom: 135px;
+    padding-bottom: 0;
   }
   .unreleased__title {
     font-size: 28px;
@@ -2493,23 +2458,42 @@ a.link:active {
     top: 126%;
   }
   .unreleased-swiper-button-next {
-    right: 30%;
+    right: 40%;
   }
   .unreleased-swiper-button-prev {
-    left: 28.3%;
+    left: 40%;
     margin-top: 4px;
   }
 
   .history {
+    margin-bottom: 6px;
     margin-top: 43px;
   }
   .history-wrapper {
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .history-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .history-small {
+    margin-left: -5px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 280px;
+    width: 49.6%;
+  }
+  .history-small--3 {
+    display: none;
   }
   .history-top {
     flex-direction: column;
     margin-left: 0;
     text-align: center;
+    align-items: center;
   }
   .history-top__title {
     font-size: 28px;
@@ -2530,61 +2514,32 @@ a.link:active {
 
   .img-big {
     height: 210px;
-    width: 300px;
+    max-width: 700px;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .img-big--button {
-    left: 130px;
-    transform: translateY(132%);
-    width: 58px;
   }
   .img-small {
     -o-object-fit: cover;
        object-fit: cover;
-    height: 140px;
-    width: 140px;
+    height: 100%;
+    width: 340px;
     margin-left: -1px;
     margin-top: 0;
     margin-bottom: 10px;
   }
 
-  .history {
-    margin-bottom: 6px;
-  }
-  .history-title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .history-small {
-    width: 140px;
-    margin-left: -5px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-  }
-  .history-small--3 {
-    display: none;
-  }
-
   .small-wrapper {
     justify-content: space-between;
     margin-left: 0;
-    width: 294px;
+    max-width: 550px;
   }
   .small-top__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
     text-align: center;
     margin-bottom: 7px;
     margin-right: 0;
   }
   .small-item {
     text-align: center;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 20px;
     margin-bottom: 26px;
     flex-direction: column;
     align-items: center;
@@ -2595,22 +2550,15 @@ a.link:active {
     align-items: center;
   }
   .small-text {
-    font-size: 12px;
-    line-height: 20px;
     margin-bottom: 15px;
   }
   .small-title {
-    margin-bottom: 6px;
+    margin-bottom: 15px;
+    font-size: 18px;
   }
 
   .bookmark {
     width: 11px;
-  }
-
-  .img-big--button {
-    left: 130px;
-    transform: translateY(132%);
-    width: 58px;
   }
 
   .publishers-title {
@@ -2655,12 +2603,16 @@ a.link:active {
   .blog {
     text-align: center;
   }
+  .blog-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
   .blog-block {
     margin-top: 60px;
     text-align: center;
   }
   .blog-item {
-    height: 92px;
+    height: 150px;
     margin-left: 5px;
   }
   .blog-top {
@@ -2673,31 +2625,14 @@ a.link:active {
   .blog-wrapper {
     flex-direction: column;
   }
-  .blog-title {
-    font-size: 28px;
-    line-height: 36px;
-    margin-right: 1px;
-    margin-bottom: 49px;
-  }
   .blog-button {
     position: absolute;
-    margin-top: 717px;
+    margin-top: 1090px;
     width: 161px;
   }
 
   .big-title {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    margin-left: -33px;
-  }
-  .big-description {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: left;
-    margin-left: -2px;
-    letter-spacing: 0px;
+    margin-left: 0;
   }
   .big-text {
     align-items: start;
@@ -2709,7 +2644,7 @@ a.link:active {
     margin-bottom: 17px;
   }
   .big-image {
-    max-height: 120px;
+    max-height: 300px;
     margin-bottom: 19px;
   }
 
@@ -2719,33 +2654,21 @@ a.link:active {
   }
   .small-image {
     margin-right: 20px;
-    width: 90px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 90px;
-  }
-  .small-title {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.175px;
-    text-align: start;
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
   }
   .small-data {
-    font-size: 10px;
-    line-height: 20px;
     margin-top: 0;
-    margin-bottom: 5px;
-  }
-
-  .link {
-    font-size: 10px;
-    line-height: 20px;
+    margin-bottom: 15px;
   }
 
   .subscription {
     background-image: url(../img/background.jpg);
     height: 305px;
+    background-repeat: no-repeat;
   }
   .subscription-title {
     font-size: 28px;
@@ -2753,18 +2676,17 @@ a.link:active {
     width: 100%;
     text-align: left;
     margin-right: 0;
-    padding-right: 0px;
-    width: 200px;
-    margin-left: 8px;
-    margin-top: 25px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-top: 80px;
   }
   .subscription-block {
-    flex-direction: column;
-    padding: 0px 24px 80px 0px;
+    flex-direction: row;
+    padding: 0px 5px 80px 0px;
     margin-top: 97px;
   }
   .subscription-item {
-    margin: 8px 0px 12px 9px;
+    margin: 70px 0px 12px 9px;
     letter-spacing: 0.3px;
     width: 272px;
     align-items: flex-start;
@@ -2799,7 +2721,7 @@ a.link:active {
   .footer-wrapper {
     margin-right: auto;
     margin-left: auto;
-    max-width: 269px;
+    max-width: 700px;
   }
   .footer__main-item {
     margin-top: 45px;
@@ -2853,13 +2775,12 @@ a.link:active {
   }
   .footer-wrapper {
     margin-bottom: 0;
-    justify-content: start;
   }
   .footer__main-item {
     display: flex;
     flex-direction: column;
-    margin-left: 22px;
-    margin-right: auto;
+    margin-left: 221px;
+    margin-right: 0;
     align-items: center;
     margin-top: 0;
   }
@@ -2876,14 +2797,13 @@ a.link:active {
   }
   .footer-bottom-wrapper {
     margin-bottom: 0;
-    justify-content: start;
+    justify-content: center;
   }
   .footer-bottom__main-item {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
     margin-top: 0;
   }
   .footer-bottom__main-text {
@@ -3039,11 +2959,6 @@ a.link:active {
     height: 330px;
   }
 
-  .background-image {
-    width: 50%;
-    height: 66%;
-  }
-
   .recomendations {
     margin-top: -45px;
     margin-bottom: 54px;
@@ -3107,8 +3022,6 @@ a.link:active {
     margin-top: -41px;
     z-index: 98;
     position: absolute;
-    width: 30%;
-    height: 53%;
     margin-left: 5px;
   }
   .book-leftcard--w2 {
@@ -3384,11 +3297,6 @@ a.link:active {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .img-big--button {
-    left: 130px;
-    transform: translateY(132%);
-    width: 58px;
-  }
   .img-small {
     -o-object-fit: cover;
        object-fit: cover;
@@ -3455,12 +3363,6 @@ a.link:active {
 
   .bookmark {
     width: 11px;
-  }
-
-  .img-big--button {
-    left: 130px;
-    transform: translateY(132%);
-    width: 58px;
   }
 
   .publishers-title {
