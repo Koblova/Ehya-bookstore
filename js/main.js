@@ -42,7 +42,7 @@ $(document).ready(function () {
       width: "100%",
       videoId: "DSG28w5Hr5U",
       events: {
-
+        onReady: videoPlay,
       },
     });
   });
@@ -197,6 +197,10 @@ $(document).ready(function () {
         },
         1200: {
           slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1201: {
+          slidesPerView: 5,
           spaceBetween: 30,
         },
       },
