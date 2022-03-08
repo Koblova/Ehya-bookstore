@@ -421,7 +421,7 @@ a.link:active {
   align-items: center;
   justify-content: space-between;
   padding-top: 47px;
-  padding-bottom: 109px;
+  padding-bottom: 105px;
 }
 .navbar-menu {
   display: flex;
@@ -459,7 +459,7 @@ a.link:active {
   border: 2px solid #1565D8;
   box-sizing: border-box;
   border-radius: 8px;
-  padding: 13px 28px 13px 28px;
+  padding: 10px 28px 15px 28px;
   background-color: #fff;
   color: #1565D8;
   font-style: normal;
@@ -497,6 +497,7 @@ a.link:active {
 }
 .hero-left {
   width: 535px;
+  margin-left: 4px;
 }
 .hero-right {
   width: 488px;
@@ -506,6 +507,7 @@ a.link:active {
   align-items: center;
   background-color: #f8f4f4;
   margin-top: -11px;
+  margin-right: -4px;
 }
 .hero-image {
   background: rgba(206, 197, 197, 0);
@@ -575,7 +577,8 @@ a.link:active {
 
 .recomendations {
   margin: 0;
-  margin-top: 0;
+  margin-top: -2px;
+  margin-left: 3px;
 }
 .recomendations-more {
   width: 751px;
@@ -637,7 +640,7 @@ a.link:active {
 }
 .book-left {
   width: 748px;
-  height: 865px;
+  height: 874px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -698,7 +701,7 @@ a.link:active {
 }
 
 .leftcard-title {
-  margin-top: 0;
+  margin-top: 0px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -707,9 +710,9 @@ a.link:active {
 .leftcard-bottom {
   display: flex;
   align-items: center;
-  height: 36px;
-  width: 167px;
-  margin-right: 25px;
+  /*height: 36px */
+  /*width: 167px */
+  /*margin-right: 25px */
 }
 .leftcard-button {
   border-radius: 2000px;
@@ -720,7 +723,9 @@ a.link:active {
   width: 101px;
   height: 36px;
   padding: 7px 20px;
-  margin-right: 25px;
+  margin-right: 24px;
+  letter-spacing: 0.9px;
+  margin-left: -3px;
 }
 .leftcard-button:hover {
   color: #ffaa0041;
@@ -751,6 +756,7 @@ a.link:active {
   display: flex;
   align-items: start;
   flex-direction: column;
+  max-height: 208px;
 }
 .leftcard-description--w2 {
   width: 33%;
@@ -766,6 +772,13 @@ a.link:active {
 }
 .leftcard-description--w6 {
   width: 44%;
+}
+.leftcard-description--w2, .leftcard-description--w3, .leftcard-description--w4, .leftcard-description--w5, .leftcard-description--w6 {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.leftcard-description--w4, .leftcard-description--w5, .leftcard-description--w6 {
+  max-height: 210px;
 }
 .leftcard__icon {
   fill: #959EAD;
@@ -863,6 +876,11 @@ a.link:active {
 }
 .like--active {
   fill: #faad1321;
+}
+
+.top {
+  margin-top: -2px;
+  margin-right: -3px;
 }
 
 .swiper-slide {

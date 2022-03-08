@@ -1,6 +1,7 @@
 .recomendations
   margin: 0
-  margin-top: 0
+  margin-top: -2px
+  margin-left: 3px
   &-more
     width: 751px
     height: 72px
@@ -54,7 +55,7 @@
 
   &-left
     width: 748px
-    height: 865px
+    height: 874px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -111,7 +112,7 @@
 
 .leftcard
   &-title
-    margin-top: 0
+    margin-top: 0px
     display: -webkit-box
     -webkit-line-clamp: 3
     -webkit-box-orient: vertical
@@ -119,9 +120,9 @@
   &-bottom
     display: flex
     align-items: center
-    height: 36px
-    width: 167px
-    margin-right: 25px
+    /*height: 36px
+    /*width: 167px
+    /*margin-right: 25px
   &-button
     border-radius: 2000px
     color: #fff
@@ -131,7 +132,9 @@
     width: 101px
     height: 36px
     padding: 7px 20px
-    margin-right: 25px
+    margin-right: 24px
+    letter-spacing: 0.9px
+    margin-left: -3px
     &:hover
       color: #ffaa0041
     &:active
@@ -158,6 +161,7 @@
     display: flex
     align-items: start
     flex-direction: column
+    max-height: 208px
     &--w2
       width: 33%
     &--w3
@@ -168,6 +172,11 @@
       width: 44%
     &--w6
       width: 44%
+    &--w2, &--w3, &--w4, &--w5, &--w6
+      margin-left: 0
+      margin-right: 20px
+    &--w4, &--w5, &--w6
+      max-height: 210px
   &__icon
     fill: #959EAD
     cursor: pointer
@@ -254,6 +263,9 @@
   cursor: pointer
   &--active
     fill: #faad1321
+.top
+  margin-top: -2px
+  margin-right: -3px
 
 
 
