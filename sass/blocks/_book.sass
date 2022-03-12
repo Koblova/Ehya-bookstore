@@ -15,6 +15,7 @@
     font-weight: bold
     font-size: 16px
     line-height: 20px
+    letter-spacing: 0.2px
 
   &-favorite
     font-family: Roboto Condensed
@@ -24,6 +25,7 @@
     line-height: 20px
     text-align: center
     letter-spacing: 0.2px
+    margin-left: -22px
     &:hover
       color: #ffaa0041
     &:active
@@ -59,7 +61,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    margin-bottom: 5px
+    margin-bottom: -5px
   &-title
     font-family: Roboto Condensed
     font-style: normal
@@ -105,10 +107,12 @@
       margin-bottom: 0
     &__image
       width: 120px
-      height: 182px
+      height: 177px
       mix-blend-mode: normal
       border-radius: 5.96628px
-      margin-right: 26px
+      margin-right: 29px
+      margin-left: 1px
+      margin-top: -5px
 
 .leftcard
   &-title
@@ -117,9 +121,11 @@
     -webkit-line-clamp: 3
     -webkit-box-orient: vertical
     overflow: hidden
+    max-width: 153px
   &-bottom
     display: flex
     align-items: center
+    margin-left: 0px
     /*height: 36px
     /*width: 167px
     /*margin-right: 25px
@@ -139,6 +145,18 @@
       color: #ffaa0041
     &:active
       color: #faad1321
+    &--w2
+      margin-left: 1px
+      margin-right: 19px
+    &--w3
+      margin-left: 1px
+      margin-right: 21px
+    &--w4
+      margin-left: 0px
+      margin-right: 19px
+    &--w5, &--w6
+      margin-left: 0px
+      margin-right: 21px
   &-price
     font-family: Roboto Condensed
     font-style: normal
@@ -177,6 +195,7 @@
       margin-right: 20px
     &--w4, &--w5, &--w6
       max-height: 210px
+      margin-right: 5px
   &__icon
     fill: #959EAD
     cursor: pointer
@@ -198,6 +217,9 @@
     display: flex
     align-items: start
     flex-direction: column
+    max-height: 158px
+    margin-top: -5px
+    margin-left: -2px
 
   &-title
     font-family: Roboto
@@ -246,6 +268,7 @@
     height: 36px
     padding: 7px 20px
     margin-right: 25px
+    letter-spacing: 0.6px
     &:hover
       color: #ffaa0041
     &:active

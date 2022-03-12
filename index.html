@@ -25,14 +25,14 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar navbar-menu navbar-menu navbar-menu--left">
-              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-              <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
+              <li class="navbar-menu__item"><a href="#recomendations" class="navbar-menu__link">Рекомендации</a></li>
+              <li class="navbar-menu__item"><a href="#book" class="navbar-menu__link">Книги</a></li>
+              <li class="navbar-menu__item"><a href="#blog" class="navbar-menu__link">Блог</a></li>
           </ul>
-          <button class="navbar-button navbar-button__mobile" data-toggle="modal">Получить</button>
+          <button class="navbar-button navbar-button--mobile" data-toggle="modal">Получить</button>
         </div>
       </div>
-    <button class="navbar-button navbar-button__desktop" data-toggle="modal">Получить</button>
+    <button class="navbar-button navbar-button--desktop" data-toggle="modal">Получить</button>
 
     </div>
   </div>
@@ -66,6 +66,7 @@
   <div class="container">
     <div class="book-wrapper">
       <div class="recomendations">
+        <a name="recomendations"></a>
           <h2 class="book-title">Рекомендации</h2>
           <div class="book-left">
           <div class="book-leftcard book-leftcard--w1">
@@ -184,7 +185,7 @@
             <!--book-leftcard-->
           </div>
           <!--book-left-->
-          <button class="recomendations-more"><span class="recomendations-title__button"><a href="/">БОЛЬШЕ РЕКОМЕНДАЦИЙ</a></button>
+          <button class="recomendations-more"><a href="/">БОЛЬШЕ РЕКОМЕНДАЦИЙ</a></button>
       </div>
       <!--recommendations-->
         <div class="top">
@@ -354,7 +355,7 @@
         swiper-button-next
         theme-swiper-button theme-swiper-button-next
       "
-    ><img src="/img/stroke-right.svg" class="icon">
+    ><img src="img/stroke-right.svg" class="icon">
   </div>
     <div
       class="
@@ -362,7 +363,7 @@
         theme-swiper-button theme-swiper-button-prev
       "
     >
-    <img src="/img/stroke-left.svg" class="icon">
+    <img src="img/stroke-left.svg" class="icon">
     
   </div>
     </div>
@@ -374,6 +375,7 @@
 
 <!--theme-->
 <section class="unreleased">
+  <a name="book"></a>
   <div class="container">
     <h2 class="unreleased__title">Неизданные книги</h2>
     <div class="unreleased-wrapper">
@@ -453,7 +455,6 @@
       ></div>
     </div>
   </div>
-    </div>
     <!-- /.contsiner -->
   </div>
   <!-- /.unreleased-wrapper -->
@@ -469,10 +470,10 @@
           </p>
       </div>
       <div class="history-big">
-        <div class="histoty-item history-item__big" id="playerbig">
+        <div class="history-item history-item--big" id="playerbig">
           <img src="img/big.webp" alt="Video" class="img-big">
           <script src="https://www.youtube.com/iframe_api"></script>
-          <img src="img/big-button.svg" alt="Button play" class="video-play img-big--button">
+          <img src="img/big-button.svg" alt="Button play" class="video-play">
         </div>
       </div>
 
@@ -480,7 +481,7 @@
       <div class="small-wrapper">
         <div class="history-small">
 
-            <div class="history-item history-item__small" id="playersmall1">
+            <div class="history-item history-item--small" id="playersmall1">
               <img src="img/small-1.webp" alt="Video Emelda Scandroot" class="img-small">
               <script src="https://www.youtube.com/iframe_api"></script>
               <img src="img/small-button.svg" alt="Button play" class=" small-button1">
@@ -491,13 +492,13 @@
               <div class="small-top__title">Emelda Scandroot</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
-            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
+            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark1">
           </div>
         </div>
 
         <div class="history-small">
 
-          <div class="history-item history-item__small" id="playersmall2">
+          <div class="history-item history-item--small" id="playersmall2">
             <img src="img/small-2.webp" alt="Video Mar Rueda" class="img-small">
             <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/small-button.svg" alt="Button play" class="small-button2">
@@ -507,11 +508,11 @@
               <div class="small-top__title">Mar Rueda</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
-            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
+            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark2">
           </div>
         </div>
         <div class="history-small history-small--3">
-            <div class="history-item history-item__small" id="playersmall3">
+            <div class="history-item history-item--small" id="playersmall3">
               <img src="img/small-3.webp" alt="Video Nembo Lukeni" class="img-small">
               <script src="https://www.youtube.com/iframe_api"></script>
               <img src="img/small-button.svg" alt="Button play" class="small-button3">
@@ -521,12 +522,12 @@
                 <div class="small-top__title">Nembo Lukeni</div>
                 <div class="small-text">Author of Books Tittle</div>
               </div>
-              <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark">
+              <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark3">
             </div>
         </div>
       </div>
     </div>
-    <!-- histoty-wrapper -->
+    <!-- history-wrapper -->
   </div>
   <!-- container -->
 </section>
@@ -1006,6 +1007,7 @@
 </section>
 <!--section.publishers-->
 <section class="blog">
+  <a name="blog"></a>
   <div class="container">
     <div class="blog-block">
       <div class="blog blog-top">
@@ -1014,17 +1016,17 @@
       </div>
       <div class="blog blog-wrapper">
         <div class="big big-blog">
-          <img src="img/big-image.webp" alt="Image: Big image blog" class="big-image">
+          <a href="/"><img src="img/big-image.webp" alt="Image: Big image blog" class="big-image"></a>
           <h3 class="big-title">Success Steps For Your Business Life</h3>
           <p class="big-description">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the scene of their books.</p>
         </div>
         <div class="small-blog">
           <div class="blog blog-item">
-            <img src="img/small-image-1.webp" alt="Image: Blog 1" class="small-image">
+            <a href="/" class="small-image--1"><img src="img/small-image-1.webp" alt="Image: Blog 1" class="small-image"></a>
             <div class="big-text">
               <div class="small-data">23 МАРТА 2020</div>
-              <div class="small-title">29 Motivational Quotes
-                for Work Environments</div>
+              <a href="/" class="small-title">29 Motivational Quotes
+                for Work Environments</a>
               <div class="small-description">
                 <a href="#" class="link">ЧИТАТЬ</a>
               </div>
@@ -1033,11 +1035,11 @@
 
 
             <div class="blog blog-item">
-              <img src="img/small-image-2.webp" alt="Image: Blog 2" class="small-image">
+              <a href="/" class="small-image--2"><img src="img/small-image-2.webp" alt="Image: Blog 2" class="small-image"></a>
               <div class="big-text">
                 <div class="small-data">28 МАРТА 2020</div>
-                <div class="small-title small-title--w1">Learn To Love Growth<br>
-                  and You Will Be A Success</div>
+                <a href="/" class="small-title small-title--w1">Learn To Love Growth<br>
+                  and You Will Be A Success</a>
                   <div class="small-description">
                     <a href="#" class="link">ЧИТАТЬ</a>
                   </div>
@@ -1046,11 +1048,11 @@
 
 
               <div class="blog blog-item">
-                <img src="img/small-image-3.webp" alt="Image: Blog 3" class="small-image">
+                <a href="/" class="small-image--3"><img src="img/small-image-3.webp" alt="Image: Blog 3" class="small-image"></a>
                 <div class="big-text">
                   <div class="small-data">28 МАРТА 2020</div>
-                  <div class="small-title">Motivation How To Build 
-                    Trust at your Work</div>
+                  <a href="/" class="small-title">Motivation How To Build 
+                    Trust at your Work</a>
                   <div class="small-description">
                     <a href="#" class="link">ЧИТАТЬ</a>
                   </div>
@@ -1079,10 +1081,7 @@
             <input type="text" class="subscription-input" placeholder="Ваш Emaill">
 
             
-            <button class="subscription-button" data-toggle="modal">
-                            
-
-              Регистрация
+            <button class="subscription-button">Регистрация
             </button>
           </form>
         </div>
@@ -1111,8 +1110,6 @@
       <!--subscription-block -->
     </div>
     <!--section.blog-->
-  </div>
-  <!--container-->
 </section>
 <!-- /.subscription -->
 <section class="footer">

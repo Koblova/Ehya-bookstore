@@ -1,16 +1,23 @@
 .history
-  margin-top: 100px
+  margin-top: 104px
   margin-bottom: 100px
   &-item
     position: relative
     z-index: 1
-    width: 300px
-    height: 211px
+    &--big
+      width: 1007px
+      height: 380px
+      margin-bottom: -4px
+    &--small     
+      width: 315px
+      height: 197px
+      margin-bottom: 28px
+
   &-top
     display: flex
     justify-content: space-between
     margin-left: 69px
-    margin-bottom: 21px
+    margin-bottom: 10px
   &-title
     font-family: Roboto Condensed
     font-style: normal
@@ -30,10 +37,10 @@
     font-size: 18px
     line-height: 32px
   &-wrapper
-
+    margin-left: 3px
   &-big
     margin-left: 69px
-    margin-bottom: 27px
+    margin-bottom: 33px
     position: relative
   &-small
     
@@ -41,6 +48,8 @@
   &-item
     display: flex
     justify-content: space-between
+    margin-left: -2px
+
 
   &-wrapper
     display: flex
@@ -55,9 +64,10 @@
       font-weight: 500
       font-size: 22px
       line-height: 32px
-      margin-bottom: 10px
+      margin-bottom: 9px
       color: $text-color
       margin-right: 120px
+      letter-spacing: 0.2px
   &-text
     font-family: Open Sans
     font-style: normal
@@ -71,7 +81,7 @@
   &-button1
     position: absolute
     top: 43%
-    left: 46%
+    left: 45%
     background-repeat: no-repeat
     background-size: 56px
     background-position: center
@@ -81,7 +91,7 @@
   &-button2
     position: absolute
     top: 43%
-    left: 46%
+    left: 45%
     background-repeat: no-repeat
     background-size: 275px
     background-position: center
@@ -91,7 +101,7 @@
   &-button3
     position: absolute
     top: 43%
-    left: 46%
+    left: 45%
     background-repeat: no-repeat
     background-size: 275px
     background-position: center
@@ -102,12 +112,13 @@
   &-small
     height: 200px
     margin-bottom: 20px
+    
 
-  &-big
-    &--button
+.video
+  &-play
       position: absolute
       top: 37%
-      left: 46%
+      left: 45%
       background-repeat: no-repeat
       background-size: 275px
       background-position: center
@@ -116,3 +127,8 @@
       cursor: pointer
 .bookmark
   margin-bottom: 30px
+  cursor: pointer
+  &--active
+    fill: #FF0000
+    
+    

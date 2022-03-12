@@ -46,8 +46,17 @@ $(document).ready(function () {
       },
     });
   });
+/*
+  var likeS = document.getElementById("mark2");
+  likeS.addEventListener("click", function () {
+    document.getElementById("mark2").classList.toggle("bookmark--active");
+  });
 
-
+  var likeS = document.getElementById("mark3");
+  likeS.addEventListener("click", function () {
+    document.getElementById("mark3").classList.toggle("bookmark--active");
+  });
+*/
   var likeF = document.getElementById("like1");
   likeF.addEventListener("click", function () {
     document.getElementById("like1").classList.toggle("like--active");
@@ -102,7 +111,6 @@ $(document).ready(function () {
     $(".body").css("overflow", "auto");
   }
 
-  // обработка форм
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
