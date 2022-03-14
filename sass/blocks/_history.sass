@@ -5,12 +5,11 @@
     position: relative
     z-index: 1
     &--big
-      width: 1007px
       height: 380px
       margin-bottom: -4px
     &--small     
-      width: 315px
-      height: 197px
+      max-width: 315px
+      max-height: 197px
       margin-bottom: 28px
 
   &-top
@@ -42,6 +41,8 @@
     margin-left: 69px
     margin-bottom: 33px
     position: relative
+    max-width: 1007px
+    max-height: 380px
   &-small
     
 .small
@@ -112,6 +113,9 @@
   &-small
     height: 200px
     margin-bottom: 20px
+  &-big
+    max-width: 1007px
+    max-height: 380px
     
 
 .video
@@ -125,7 +129,10 @@
       border: none
       background-color: transparent
       cursor: pointer
-.bookmark
+.bookmarks
+  width: 14px
+  height: 19px
+  fill: #1565D8
   margin-bottom: 30px
   cursor: pointer
   &--active

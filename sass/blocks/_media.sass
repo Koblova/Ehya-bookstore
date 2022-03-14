@@ -8,10 +8,12 @@
       &-next
         right: 25px
       &-prev
-        left: 25px
+        left: 1000px
   .publishers
     &-wrapper
-      width: 1121px
+      width: 1118px
+  .big
+    &-text
 
 @media (max-width: 1200px)
   .container
@@ -94,19 +96,18 @@
   .theme
     &-slide
       &__item
-        font-size: 20px
+        font-size: 16px
       &__subtitle
-        font-size: 14px
+        font-size: 12px
   .unreleased
     &-swiper
       &-button
-
         &-prev
-          left: 86.6%
+          left: 84.6%
   .theme
     &-slide
       &__title
-        font-size: 18px
+        font-size: 14px
     &-swiper
       &-button
         &-next
@@ -126,6 +127,9 @@
       margin-bottom: 14px
     &-small
       width: 32%
+    &-item
+      &--big
+        max-height: 380px
   .small
     &-wrapper
       margin-left: 0
@@ -140,14 +144,20 @@
       &__title
         font-size: 20px
     &-image
-      margin-right: 10px
+      margin-right: -52px
+    &-title
+      font-size: 18px
   .big
     &-blog
       margin-right: 15px
       width: 57%
+    &-text
+      width: 120px
   .blog
     &-top
       margin-right: 0
+
+
   .more
     margin-right: 3px
   .subscription
@@ -165,10 +175,14 @@
         display: none
       &--2
         display: none
+  .small
+    &-link
+      width: 320px
+
 @media (max-width: 1110px)
   .publishers
     &-wrapper
-      width: 99%
+      width: 96%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -266,7 +280,7 @@
     &-swiper
       &-button
           &-prev
-            left: 82.6%
+            left: 78.6%
   .img
     &-small
       object-fit: cover
@@ -287,31 +301,50 @@
     &-wrapper
       display: flex
       flex-direction: column
+      align-items: center
     &-block
       display: flex
       flex-direction: column
+      
     &-button
       position: absolute
-      margin-top: 1115px      
+      margin-top: 1127px      
   .big
     &-blog
       margin-right: 0
       width: 100%
     &-image
-      max-width: 621px
       object-fit: cover
       border-radius: 8px
+      width: 557px
     &-description
       max-width: 600px
       margin-bottom: 36px
+      margin-left: 0
+    &-text
+      width: 276px
+    &-title
+      margin-left: 0
+  .small
+    &-image
+      &--1
+        width: 291px
+        margin-right: 36px
+      &--2
+        width: 250px
+        margin-right: 36px
+      &--3
+        width: 304px
   .subscription
     &-item
       width: 360px
     &-button
-      margin-right: 128px
+      margin-right: 2px
       font-size: 14px
     &-title
       font-size: 30px
+    &-form
+      width: 400px
   .footer
     &__main
       &-item
@@ -323,7 +356,7 @@
         font-size: 15px
   .publishers
     &-wrapper
-      width: 95%
+      width: 94%
     &-image
       margin-right: 65px
       &--1
@@ -722,9 +755,10 @@
       margin-left: -4px
   .img
     &-big
-      height: 210px
-      width: 700px
+      height: 246px
+      width: 626px
       object-fit: cover
+      margin-bottom: 10px
 
     &-small
       object-fit: cover
@@ -737,7 +771,6 @@
     &-wrapper
       justify-content: space-between
       margin-left: 0
-      width: 100%
     &-top
       &__title
         text-align: center
@@ -759,8 +792,6 @@
       font-size: 18px
   .bookmark
     width: 11px
-  .img
-
   .publishers
     &-title
       margin-bottom: 64px
@@ -768,6 +799,9 @@
       margin-left: 0px
       line-height: 30px
       margin-top: 23px
+    &-wrapper
+      width: 87%
+      margin-left: 65px
     &-image
       width: 188px
       margin-right: -18px
@@ -813,7 +847,7 @@
       flex-direction: column
     &-button
       position: absolute
-      margin-top: 1090px
+      margin-top: 1118px
       width: 161px
   .big
     &-title
@@ -821,21 +855,24 @@
     &-text
       align-items: start
       text-align: start
+
     &-blog
-      margin-right: 8px
-      margin-left: 6px
+      margin-right: 6px
+      margin-left: 0
       margin-bottom: 17px
+      width: 72%
     &-image
       max-height: 300px
-      margin-bottom: 19px
+      max-width: 400px
+      margin-bottom: 0
   .small
     &-description
       align-items: start
       text-align: start
     &-image
-      margin-right: 20px
+      margin-right: 54px
       object-fit: cover
-      width: 250px
+      width: 240px
       height: 150px
       border-radius: 8px
     &-data
@@ -865,22 +902,31 @@
       align-items: flex-start
       min-height: 112px
     &-input
-      margin: 18px -39px 18px -83px
-      width: 207px
+      /*margin: 18px -39px 18px -83px
+      /*width: 170px
+      text-align: center
+      margin: 0
     &-form
       flex-direction: column
       margin-top: 0
-      padding-left: 0
-      width: 272px
+      padding-left: 6px
+      padding-right: 38px
+      width: 271px
+      
     &-button
-      width: 250px
+      width: 266px
       margin-right: 73px
       letter-spacing: 0.5px
       margin-top: 0
       min-height: 39px
+      margin-right: 0
+      top: 58px
     &-icon
       margin-left: 19px
       margin-top: 19px
+  .invalid
+    &-form
+      margin-right: 0
   .footer
     padding-top: 45px
     margin-right: 8px
@@ -975,9 +1021,64 @@
       margin-right: 0
       &-wrapper
         flex-direction: column
-@media (max-height: 520px)
+@media (max-width: 520px)
+  .big
+    &-text
+      width: 213px
+  .small
+    &-link
+      width: 222px
+    &-image
+      width: 178px
+      margin-right: 57px
+  .publishers
+    &-wrapper
+      width: 85%
 
-@media (max-height: 370px)
+  .subscription
+    background-image: url(../img/background.jpg)
+    height: 305px
+    background-repeat: repeat
+    &-title
+      font-size: 28px
+      line-height: 36px
+      width: 100%
+      text-align: left
+      margin-right: 0
+      padding-right: 0px
+      width: 300px
+      margin-left: 8px
+      margin-top: 25px
+    &-block
+      flex-direction: column
+      padding: 0px 24px 80px 0px
+      margin-top: 97px
+    &-item
+      margin: 8px 0px 12px 9px
+      letter-spacing: 0.3px
+      width: 272px
+      align-items: flex-start
+      min-height: 112px
+    &-input
+      width: 207px
+    &-form
+      flex-direction: column
+      margin-top: 0
+      padding-left: 0
+      width: 272px
+    &-button
+      width: 250px
+      margin-right: 18px
+      letter-spacing: 0.5px
+      margin-top: 0
+      min-height: 39px
+    &-icon
+      margin-left: 19px
+      margin-top: 19px
+  .invalid
+    &-form
+      margin-right: 0
+@media (max-width: 370px)
   .container
     max-width: 91%
   body

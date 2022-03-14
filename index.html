@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width; initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
   href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
   rel="stylesheet">
@@ -13,10 +13,10 @@
   <title>Ehya</title>
 </head>
 <body>
-<header class="navbar navbar--mobile_fixed">
+<header class="navbar navbar--mobile_fixed" id="navbar">
   <div class="container">
     <div class="navbar-top">
-      <a href="/" class="logo"><img src="img/logo.svg" alt="Logo: Ehya" class="logo__image"></a>
+      <a href="/ehya/" class="logo"><img src="img/logo.svg" alt="Logo: Ehya" class="logo__image"></a>
       <button class="menu-button navbar-top__menu-button">
         <span class="line"></span>
         <span class="line"></span>
@@ -25,9 +25,12 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar navbar-menu navbar-menu navbar-menu--left">
-              <li class="navbar-menu__item"><a href="#recomendations" class="navbar-menu__link">Рекомендации</a></li>
-              <li class="navbar-menu__item"><a href="#book" class="navbar-menu__link">Книги</a></li>
-              <li class="navbar-menu__item"><a href="#blog" class="navbar-menu__link">Блог</a></li>
+              <li class="navbar-menu__item">
+                <a href="#unreleased" class="navbar-menu__link navbar-menu__link--1">Рекомендации</a></li>
+              <li class="navbar-menu__item">
+                <a href="#book" class="navbar-menu__link navbar-menu__link--2">Книги</a></li>
+              <li class="navbar-menu__item">
+                <a href="#blog" class="navbar-menu__link navbar-menu__link--3">Блог</a></li>
           </ul>
           <button class="navbar-button navbar-button--mobile" data-toggle="modal">Получить</button>
         </div>
@@ -62,11 +65,11 @@
     </div>
   </div>
 </section>
-<section class="book">
+<section class="book" id="book">
   <div class="container">
     <div class="book-wrapper">
       <div class="recomendations">
-        <a name="recomendations"></a>
+ 
           <h2 class="book-title">Рекомендации</h2>
           <div class="book-left">
           <div class="book-leftcard book-leftcard--w1">
@@ -185,7 +188,7 @@
             <!--book-leftcard-->
           </div>
           <!--book-left-->
-          <button class="recomendations-more"><a href="/">БОЛЬШЕ РЕКОМЕНДАЦИЙ</a></button>
+          <button class="recomendations-more"><a href="/ehya/">БОЛЬШЕ РЕКОМЕНДАЦИЙ</a></button>
       </div>
       <!--recommendations-->
         <div class="top">
@@ -228,7 +231,7 @@
               </div>
             </div>
             <span class="recomendations-line"></span>
-                      <a href="/" class="recomendations-favorite">ЛУЧШИЕ КНИГИ</a>
+                      <a href="/ehya/" class="recomendations-favorite">ЛУЧШИЕ КНИГИ</a>
           </div>
           <!--book-right-->
         </div>
@@ -374,8 +377,7 @@
 <!-- /.theme -->
 
 <!--theme-->
-<section class="unreleased">
-  <a name="book"></a>
+<section class="unreleased" id="unreleased">
   <div class="container">
     <h2 class="unreleased__title">Неизданные книги</h2>
     <div class="unreleased-wrapper">
@@ -484,7 +486,7 @@
             <div class="history-item history-item--small" id="playersmall1">
               <img src="img/small-1.webp" alt="Video Emelda Scandroot" class="img-small">
               <script src="https://www.youtube.com/iframe_api"></script>
-              <img src="img/small-button.svg" alt="Button play" class=" small-button1">
+              <img src="img/small-button.svg" alt="Button play" class="small-button1 small-button--1">
             </div>
 
             <div class="small-item">
@@ -492,7 +494,17 @@
               <div class="small-top__title">Emelda Scandroot</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
-            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark1">
+            <svg
+            class="bookmarks"
+            id="bookmark1"
+            viewBox="0 0 14 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z"
+            />
+          </svg>
           </div>
         </div>
 
@@ -501,28 +513,49 @@
           <div class="history-item history-item--small" id="playersmall2">
             <img src="img/small-2.webp" alt="Video Mar Rueda" class="img-small">
             <script src="https://www.youtube.com/iframe_api"></script>
-            <img src="img/small-button.svg" alt="Button play" class="small-button2">
+            <img src="img/small-button.svg" alt="Button play" class="small-button2 small-button--2">
         </div>
           <div class="small-item">
             <div class="small-top">
               <div class="small-top__title">Mar Rueda</div>
               <div class="small-text">Author of Books Tittle</div>
             </div>
-            <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark2">
+
+            <svg
+            class="bookmarks"
+            id="bookmark2"
+            viewBox="0 0 14 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z"
+            />
+          </svg>
           </div>
         </div>
         <div class="history-small history-small--3">
             <div class="history-item history-item--small" id="playersmall3">
               <img src="img/small-3.webp" alt="Video Nembo Lukeni" class="img-small">
               <script src="https://www.youtube.com/iframe_api"></script>
-              <img src="img/small-button.svg" alt="Button play" class="small-button3">
+              <img src="img/small-button.svg" alt="Button play" class="small-button3 small-button--3">
             </div>
             <div class="small-item">
               <div class="small-top">
                 <div class="small-top__title">Nembo Lukeni</div>
                 <div class="small-text">Author of Books Tittle</div>
               </div>
-              <img src="img/bookmark.svg" alt="Icon: bookmark" class="bookmark" id="bookmark3">
+              <svg
+              class="bookmarks"
+              id="bookmark3"
+              viewBox="0 0 14 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.0625 0.25H1.9375C0.988281 0.25 0.25 1.02344 0.25 1.9375V18.25L7 14.3125L13.75 18.25V1.9375C13.75 1.02344 12.9766 0.25 12.0625 0.25ZM12.0625 15.332L7 12.3789L1.9375 15.332V2.14844C1.9375 2.04297 2.00781 1.9375 2.14844 1.9375H11.8516C11.957 1.9375 12.0625 2.04297 12.0625 2.14844V15.332Z"
+              />
+            </svg>
             </div>
         </div>
       </div>
@@ -1006,26 +1039,31 @@
   <!-- /.publishers-block -->
 </section>
 <!--section.publishers-->
-<section class="blog">
-  <a name="blog"></a>
+<section class="blog" id="blog">
+
   <div class="container">
     <div class="blog-block">
       <div class="blog blog-top">
         <h2 class="blog blog-title">Ehya Блог</h2>
-        <button class="blog-button"><a href="/">Все Блоги</a></button>
+        <button class="blog-button"><a href="/ehya/">Все Блоги</a></button>
       </div>
       <div class="blog blog-wrapper">
         <div class="big big-blog">
-          <a href="/"><img src="img/big-image.webp" alt="Image: Big image blog" class="big-image"></a>
+          <div class="big-image">
+            <a href="/ehya/"><img src="img/big-image.webp" alt="Image: Big image blog"></a>
+          </div>
           <h3 class="big-title">Success Steps For Your Business Life</h3>
           <p class="big-description">This is the author story section. Every week we try to give you the story of book writer. Tell all of you the behind the scene of their books.</p>
         </div>
+
         <div class="small-blog">
           <div class="blog blog-item">
-            <a href="/" class="small-image--1"><img src="img/small-image-1.webp" alt="Image: Blog 1" class="small-image"></a>
+            <div class="small-image">
+              <a class="small-link" href="/ehya/"><img src="img/small-image-1.webp" alt="Image: Blog 1"></a>
+            </div>
             <div class="big-text">
               <div class="small-data">23 МАРТА 2020</div>
-              <a href="/" class="small-title">29 Motivational Quotes
+              <a href="/ehya/" class="small-title">29 Motivational Quotes
                 for Work Environments</a>
               <div class="small-description">
                 <a href="#" class="link">ЧИТАТЬ</a>
@@ -1035,10 +1073,12 @@
 
 
             <div class="blog blog-item">
-              <a href="/" class="small-image--2"><img src="img/small-image-2.webp" alt="Image: Blog 2" class="small-image"></a>
+              <div class="small-image">
+                <a class="small-link" href="/ehya/"><img src="img/small-image-2.webp" alt="Image: Blog 2"></a>
+              </div>
               <div class="big-text">
                 <div class="small-data">28 МАРТА 2020</div>
-                <a href="/" class="small-title small-title--w1">Learn To Love Growth<br>
+                <a href="/ehya/" class="small-title small-title--w1">Learn To Love Growth<br>
                   and You Will Be A Success</a>
                   <div class="small-description">
                     <a href="#" class="link">ЧИТАТЬ</a>
@@ -1048,10 +1088,12 @@
 
 
               <div class="blog blog-item">
-                <a href="/" class="small-image--3"><img src="img/small-image-3.webp" alt="Image: Blog 3" class="small-image"></a>
+                <div class="small-image">
+                  <a class="small-link" href="/ehya/"><img src="img/small-image-3.webp" alt="Image: Blog 3"></a>
+                </div>
                 <div class="big-text">
                   <div class="small-data">28 МАРТА 2020</div>
-                  <a href="/" class="small-title">Motivation How To Build 
+                  <a href="/ehya/" class="small-title">Motivation How To Build 
                     Trust at your Work</a>
                   <div class="small-description">
                     <a href="#" class="link">ЧИТАТЬ</a>
@@ -1077,23 +1119,7 @@
             <path d="M15.6875 3.96875C14.9688 4.53125 14.0625 5.21875 10.875 7.53125C10.25 8 9.09375 9.03125 8 9.03125C6.875 9.03125 5.75 8 5.09375 7.53125C1.90625 5.21875 1 4.53125 0.28125 3.96875C0.15625 3.875 0 3.96875 0 4.125V10.5C0 11.3438 0.65625 12 1.5 12H14.5C15.3125 12 16 11.3438 16 10.5V4.125C16 3.96875 15.8125 3.875 15.6875 3.96875ZM8 8C8.71875 8.03125 9.75 7.09375 10.2812 6.71875C14.4375 3.71875 14.75 3.4375 15.6875 2.6875C15.875 2.5625 16 2.34375 16 2.09375V1.5C16 0.6875 15.3125 0 14.5 0H1.5C0.65625 0 0 0.6875 0 1.5V2.09375C0 2.34375 0.09375 2.5625 0.28125 2.6875C1.21875 3.4375 1.53125 3.71875 5.6875 6.71875C6.21875 7.09375 7.25 8.03125 8 8Z" fill="#183B56"/>
             </svg> 
           </div>
-          <form action="#" class="subscription-form">
-            <input type="text" class="subscription-input" placeholder="Ваш Emaill">
-
-            
-            <button class="subscription-button">Регистрация
-            </button>
-          </form>
-        </div>
-          <!--        <form action="send.php" method="POST" class="subscription-form">
-          <div class="subscription-form__item">
-              <div class="contact__icon">
-                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.6875 3.96875C14.9688 4.53125 14.0625 5.21875 10.875 7.53125C10.25 8 9.09375 9.03125 8 9.03125C6.875 9.03125 5.75 8 5.09375 7.53125C1.90625 5.21875 1 4.53125 0.28125 3.96875C0.15625 3.875 0 3.96875 0 4.125V10.5C0 11.3438 0.65625 12 1.5 12H14.5C15.3125 12 16 11.3438 16 10.5V4.125C16 3.96875 15.8125 3.875 15.6875 3.96875ZM8 8C8.71875 8.03125 9.75 7.09375 10.2812 6.71875C14.4375 3.71875 14.75 3.4375 15.6875 2.6875C15.875 2.5625 16 2.34375 16 2.09375V1.5C16 0.6875 15.3125 0 14.5 0H1.5C0.65625 0 0 0.6875 0 1.5V2.09375C0 2.34375 0.09375 2.5625 0.28125 2.6875C1.21875 3.4375 1.53125 3.71875 5.6875 6.71875C6.21875 7.09375 7.25 8.03125 8 8Z" fill="#183B56"/>
-                  </svg>
-              </div> 
-
-          
+          <form action="send.php" method="POST" class="subscription-form">
             <input
               type="email"
               class="subscription-input"
@@ -1101,9 +1127,18 @@
               name="email"
               required
             />
-            <button class="subscription-button" type="submit">Регистрация</button>
-          </div>
-
+            <button class="subscription-button"  type="submit">Регистрация</button>
+        </form>
+        </div>
+          <!--        <form action="send.php" method="POST" class="subscription-form">
+            <input
+              type="email"
+              class="subscription-input"
+              placeholder="Ваш Emaill"
+              name="email"
+              required
+            />
+            <button class="subscription-button"  data-toggle="modal">Регистрация</button>
         </form>-->
       
       </div>
@@ -1301,9 +1336,12 @@
     </div>
     <!-- /.container -->
 </section>
+<a href="#navbar" class="to-top">
+  <img src="img/995BF76D.png" alt="Наверх">
+</a>
 <div class="modal" id="booking-modal">
   <div class="modal__overlay">
-    <div class="modal__dialog">
+    <div class="modal__dialog" id="modal-dialog">
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="close icon" />
       </a>
