@@ -14,6 +14,11 @@
       width: 1118px
   .big
     &-text
+  .small
+    &-link
+      width: 245px
+    &-image
+      margin-right: 33px
 
 @media (max-width: 1200px)
   .container
@@ -124,12 +129,15 @@
       margin-right: 0
     &-big
       margin-left: 0
-      margin-bottom: 14px
+      margin-right: 0
+      margin-bottom: 10px
     &-small
       width: 32%
     &-item
       &--big
         max-height: 380px
+        width: 100%
+        margin-bottom: 16px
   .small
     &-wrapper
       margin-left: 0
@@ -367,12 +375,22 @@
         display: none
       &--4
         display: none       
-      
+  .swiper
+    &-slide
+      margin-right: 9px
+      &--first
+        margin-top: 10px
+      &--second
+        margin-top: 10px
+      &--forth
+        margin-top: 10px      
 @media (max-width: 767px)
   .container
     max-width: 91%
   body
     padding-top: 108px
+  .to-top
+    display: none
   .navbar
     max-width: 100%
     &--mobile
@@ -483,7 +501,7 @@
       border-style: none
       width: 280px
       height: 48px
-      padding: 7px 56px 12px 55px
+      padding: 14px 56px 12px 55px
       letter-spacing: 0.2px
       border-radius: 8px
       background: rgba(5, 0, 255, 0.1)
@@ -643,22 +661,6 @@
     &-swiper
       &__wrapper
         max-height: 500px
-  .swiper
-    &-slide
-      &--un
-        height: 100px
-  .swiper
-    &-slide
-      &--un
-        width: 206px
-
-    &-swiper
-      &-button
-        top: 124%
-        &-next
-          right: 83px
-        &-prev
-          left: 93px
 
 
   .slider-wrapper
@@ -728,11 +730,9 @@
       font-size: 28px
       line-height: 36px
     &-small
-      margin-left: -5px
       margin-top: -10px
       margin-bottom: 10px
-      width: 49.6%
-
+      width: 48.6%
       &--3
         display: none
     &-top
@@ -752,17 +752,18 @@
       line-height: 25px
       margin-bottom: 14px
     &-big
-      margin-left: -4px
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 25px
+      width: 90%
   .img
     &-big
-      height: 246px
-      width: 626px
+      width: 629px
       object-fit: cover
       margin-bottom: 10px
 
     &-small
       object-fit: cover
-      height: 100%
       width: 340px
       margin-left: -1px
       margin-top: 0
@@ -771,6 +772,7 @@
     &-wrapper
       justify-content: space-between
       margin-left: 0
+      width: 90%
     &-top
       &__title
         text-align: center
@@ -855,6 +857,7 @@
     &-text
       align-items: start
       text-align: start
+      width: 263px
 
     &-blog
       margin-right: 6px
@@ -902,8 +905,6 @@
       align-items: flex-start
       min-height: 112px
     &-input
-      /*margin: 18px -39px 18px -83px
-      /*width: 170px
       text-align: center
       margin: 0
     &-form
@@ -1011,7 +1012,6 @@
       max-height: 99%
       margin-top: 139px
     &__overlay
-      right: 465px
   .modal
     &__info
       margin-top: 0
@@ -1021,20 +1021,142 @@
       margin-right: 0
       &-wrapper
         flex-direction: column
-@media (max-width: 520px)
+@media (max-width: 590px)
   .big
+    &-image
+      max-width: 367px
     &-text
-      width: 213px
+      width: 190px
   .small
     &-link
-      width: 222px
+      width: 200px
     &-image
-      width: 178px
-      margin-right: 57px
+      width: 200px
+      margin-right: 15px
+  .blog
+    &-button
+      margin-top: 1080px
   .publishers
     &-wrapper
       width: 85%
+    &-image
+      margin-right: -21px
+      width: 160px
+      margin-left: -20px
+  .swiper
+    &-wrapper
+    &-slide
+      &--second
+        margin-top: 0
 
+@media (max-width: 520px)
+  .theme
+    &-swiper
+      &-button
+        &-prev
+          left: 85px
+        &-next
+          right: 85px
+
+  .big
+    &-text
+      width: 150px
+    &-image
+      height: 200px
+      margin-bottom: 20px
+      max-width: 248px
+  .small
+    &-link
+      width: 140px
+      height: 140px
+      &__image
+        width: 140px
+        height: 140px
+        object-fit: cover
+        border-radius: 8px
+    &-image
+      width: 140px
+      margin-right: 15px
+    &-top
+      &__title
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+    &-text
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 20px
+  .swiper
+    &-slide
+      &--un
+        height: 100px
+  .swiper
+    &-slide
+      &--un
+        width: 206px
+  .swiper
+    margin-left: -4px
+    margin-right: 34px
+    &-slide
+      &--un
+        width: 205px
+    &-swiper
+      &-button
+        top: 124%
+        &-next
+          right: 83px
+        &-prev
+          left: 93px
+    &-slide
+      width: 140px
+      margin-right: 9px
+      &--therd
+        order: -1
+        width: 139.5px
+      &--first
+        order: -3
+        margin-top: 10px
+        width: 139.5px
+      &--second
+        margin-top: 10px
+      &--forth
+        order: -2
+        margin-top: 10px
+  .publishers
+    &-wrapper
+      width: 85%
+  .history
+    &-big
+      width: 300px
+    &-item
+      &--small
+        max-width: 140px
+        max-height: 140px
+      &--big
+        width: 300px
+    &-small
+      width: 140px
+  .img
+    &-small
+      width: 140px
+      height: 140px
+    &-big
+      width: 300px
+  .small
+    &-wrapper
+      width: 300px
+  .video
+    &-play
+      left: 40%
+  .blog
+    &-button
+      margin-top: 1145px
   .subscription
     background-image: url(../img/background.jpg)
     height: 305px
@@ -1078,13 +1200,21 @@
   .invalid
     &-form
       margin-right: 0
+  .footer
+    &__secondary
+      &-item
+        margin-right: 18px
+  .video
+    &-play
+      left: 34%
+  
 @media (max-width: 370px)
   .container
     max-width: 91%
   body
     padding-top: 108px
   .navbar
-    max-width: 320px
+    max-width: 100%
     &--mobile
       &_fixed
         background-color: #fff
@@ -1104,8 +1234,6 @@
       &--visible
         display: block
         z-index: 9999999
-    &-button
-      display: none
 
     &-top
       padding-bottom: 33px
@@ -1138,6 +1266,7 @@
     &-text
       text-align: center
       margin-bottom: 0px
+      margin-right: 8px
     &-title
       text-align: center
       font-size: 32px
@@ -1149,8 +1278,9 @@
       font-weight: normal
       font-size: 16px
       line-height: 24px
-      margin-left: -5px
       margin-bottom: 32px
+      margin-left: -2px
+      letter-spacing: 0.2px
     &-description
       text-align: center
       font-weight: normal
@@ -1159,9 +1289,13 @@
       width: 100%
       margin-top: 34px
       margin-bottom: 14px
+      &__word
+        margin-left: -12px
     &-button
       flex-direction: column
       align-items: center
+      margin-right: 10px
+
       &__buy
         width: 176px
         height: 40px
@@ -1181,6 +1315,9 @@
     &-right
       margin-top: 22px
       height: 330px
+    &-image
+      width: 143px
+      margin-right: 11px
   .recomendations
     margin-top: -45px
     margin-bottom: 54px
@@ -1188,10 +1325,13 @@
       border-style: none
       width: 280px
       height: 48px
-      padding: 7px 56px 12px 55px
+      padding: 10px 56px 12px 55px
       letter-spacing: 0.2px
       border-radius: 8px
       background: rgba(5, 0, 255, 0.1)
+      margin-top: 8px
+      margin-right: 7px
+      margin-bottom: 4px
     &-title
       &__button
         color: #1565D8
@@ -1202,7 +1342,8 @@
       font-size: 28px
       line-height: 36px
     &-favorite
-      margin-left: -20px
+      margin-left: -18px
+      margin-top: 40px
   .book
     text-align: center
     margin-bottom: 54px
@@ -1210,10 +1351,12 @@
       flex-wrap: nowrap
       width: 279px
       height: 334px
+      margin-right: 10px
     &-title
       font-size: 28px
       line-height: 36px
       margin-bottom: 72px
+      margin-right: 8px
     &-wrapper
       flex-direction: column
       flex-wrap: nowrap
@@ -1223,6 +1366,7 @@
       padding: 16px
       width: 280px
       max-height: 312px
+      min-height: 312px
       &-title
         font-weight: 500
         font-size: 20px
@@ -1233,6 +1377,9 @@
         margin-top: -41px
         z-index: 98
         position: absolute
+        width: 95px
+        height: 137px
+        right: 123px
 
         margin-left: 5px
       &--w2
@@ -1246,18 +1393,21 @@
       &--w6
         display: none
     &-right
-      margin-top: -11px
-      padding-top: 0
+      padding-top: 12px
       width: 290px
-      padding-left: 16px
-      margin-top: -29px
-      height: 797px
+      padding-left: 13px
+      margin-top: -38px
+      margin-left: -4px
+      height: 804px
+      justify-content: flex-start
     &-rightcard
       margin-bottom: -4px
       &__image
         width: 96px
-        height: 145px
-        margin-right: 12px
+        height: 143px
+        margin-bottom: 5px
+        margin-right: 18px
+
   h3
     font-weight: 500
     font-size: 20px
@@ -1267,10 +1417,13 @@
       margin-top: 3px
       margin-right: -6px
       margin-bottom: 12px
+      max-width: 234px
+      width: 235px
     &-description
       text-align: center
       align-items: center
       margin-top: 112px
+      margin-right: 7px
     &-text
       margin-bottom: 16px
       font-size: 14px
@@ -1294,12 +1447,15 @@
       line-height: 24px
       font-size: 15px
       letter-spacing: 0.1px
-      margin-top: -5px
+      margin-bottom: 12px
+      margin-top: -4px
+      margin-left: -1px
     &-description
       text-align: start
-      max-width: 110px
+      max-width: 112px
     &-price
-      margin-bottom: 11px
+      margin-bottom: 14px
+      font-size: 20px
     &-button
       margin-left: -1px
       letter-spacing: 0.7px
@@ -1314,33 +1470,50 @@
       width: 36px
     &-slide
       min-height: 182px
+      max-width: 140px
+      margin-right: 2px
+      margin-top: 1px
       &__title
         font-size: 16px
-        line-height: 20px
+        line-height: 19.5px
         text-align: center
         letter-spacing: 0.2px
         margin-bottom: 8px
+        margin-bottom: 11px
+        &--first
+          margin-bottom: 32px
+      &__link
+        width: 110px
       &__subtitle
         font-size: 12px
         line-height: 20px
         text-align: center
+        margin-left: 2px
     &-swiper
+      margin-left: -4px
+      margin-right: 34px
       &__wrapper
         max-height: 500px
     &-swiper
       &-button
-        top: 115%
+        top: 114.1%
         width: 48px
         height: 48px
         padding: 15px 15px
         &-next
-          right: 93px
+          right: 102px
         &-prev
-          left: 93px
+          left: 100px
           margin-top: 0px
     &-swiper
       &__wrapper
         max-height: 500px
+  .icon
+    width: 14px
+  .container
+    &--theme
+      max-width: 310px
+      margin-left: 3px
   .swiper
     &-slide
       &--un
@@ -1350,6 +1523,8 @@
       &--un
         width: 206px
   .swiper
+    margin-left: -4px
+    margin-right: 34px
     &-slide
       &--un
         width: 205px
@@ -1361,34 +1536,33 @@
         &-prev
           left: 93px
     &-slide
+      width: 140px
+      margin-right: 9px
       &--therd
         order: -1
+        width: 139.5px
       &--first
         order: -3
         margin-top: 10px
+        width: 139.5px
       &--second
-        order: -2
         margin-top: 10px
       &--forth
-        order: 0
+        order: -2
+        margin-top: 10px
 
-  .slider-wrapper
-    max-width: 471px
-    margin-right: auto
-    margin-left: auto
-
+  .slider
+    &-wrapper
+      max-width: 471px
+      margin-right: auto
+      margin-left: auto
+  .container
+    &--unreleased
+      margin-left: 7px
   .unreleased
-    padding-top: 1px
     padding-bottom: 135px
     &-book
       width: 72%
-    &__title
-      font-size: 28px
-      line-height: 36px
-      text-align: center
-      letter-spacing: 0.4px
-      margin-bottom: -93px
-      margin-left: 0px
     &-swiper
       width: 206px
       &-button
@@ -1400,40 +1574,32 @@
           left: 28.3%
           margin-top: 4px
           padding-top: 47px
-          padding-bottom: 135px
     &__title
       font-size: 28px
       line-height: 36px
       text-align: center
       letter-spacing: 0.2px
-      margin-bottom: 44px
-      margin-left: 0
-      padding-top: 47px
-      padding-bottom: -93px
-    &__title
-      font-size: 28px
-      line-height: 36px
-      text-align: center
-      letter-spacing: 0.2px
-      margin-bottom: 44px
+      margin-bottom: 41px
       margin-left: 0
     &-swiper
       &-button
         background-size: 48px
-        top: 126%
+        top: 127%
         &-next
-          right: 30%
+          right: 28%
         &-prev
           left: 28.3%
           margin-top: 4px
 
   .history
     margin-top: 43px
+    &-title
+      margin-top: 1px
     &-wrapper
       flex-direction: column
     &-top
       flex-direction: column
-      margin-left: 0
+      margin-left: -11px
       text-align: center
       &__title
         font-size: 28px
@@ -1445,9 +1611,14 @@
       max-height: 125px
       font-size: 18px
       line-height: 25px
-      margin-bottom: 14px
+      margin-bottom: 24px
+      margin-top: 2px
+      max-width: 266px
     &-big
-      margin-left: -4px
+      margin-left: -11px
+    &-item
+      &--big
+        max-height: 200px
   .img
     &-big
       height: 210px
@@ -1456,11 +1627,11 @@
 
     &-small
       object-fit: cover
-      height: 140px
+      height: 138px
       width: 140px
       margin-left: -1px
       margin-top: 0
-      margin-bottom: 10px
+      margin-bottom: -16px
   .history
     margin-bottom: 6px
     &-title
@@ -1477,7 +1648,7 @@
   .small
     &-wrapper
       justify-content: space-between
-      margin-left: 0
+      margin-left: -4px
       width: 294px
     &-top
       &__title
@@ -1506,20 +1677,74 @@
       margin-bottom: 15px
     &-title
       margin-bottom: 6px
-  .bookmark
+
+    &-image
+      width: 178px
+      margin-right: 57px
+    &-button1
+      width: 23px
+      top: 45%
+      left: 41%
+    &-button2
+      width: 23px
+      top: 45%
+      left: 41%    
+  .bookmarks
     width: 11px
+    height: 15px
   .publishers
     &-title
       margin-bottom: 26px
       margin-right: 17px
-      margin-left: 0px
       line-height: 30px
-      margin-top: 23px
+      margin-left: -2px
+      margin-top: 22px
+    &-wrapper
+      width: 100%
+      margin-left: 22px
+      margin-top: 33px
+      width: 80%
     &-image
-      width: 171px
-      margin-right: -18px
-      margin-bottom: 17px
-      margin-left: -11px
+      width: 95px
+      height: 30px
+      margin-right: 0
+      margin-bottom: 0
+      margin-left: 0
+      margin-top: -6px
+      &--w1
+        margin-top: -2px
+      &--w3
+        width: 95px
+        height: 30px
+        margin-right: 0px
+        margin-bottom: 0
+        margin-left: 6px
+        margin-top: -9px        
+      &--w4
+        width: 86px
+        margin-right: 9px
+        margin-top: -13px
+      &--w5
+        margin-left: 1px
+      &--w6
+        margin-left: 8px
+        margin-top: -15px
+      &__item
+        width: 100px
+        margin-right: -45px
+        &--w1
+          width: 87px
+        &--11
+          margin-top: 3px
+        &--w2
+          width: 90px
+        &--w3
+          width: 92px
+        &--w4
+          width: 87px
+        &--w5
+          width: 88px
+          margin-top: -8px
       &--1
         display: none
       &--2
@@ -1539,6 +1764,11 @@
       height: 346px
       margin-top: -32px
       padding-top: 16px
+  .video
+    &-play
+      left: 40%
+      width: 58px
+      top: 38%
   .blog
     text-align: center
     &-block
@@ -1546,10 +1776,11 @@
       text-align: center
     &-item
       height: 92px
-      margin-left: 5px
+      margin-left: 77px
+      margin-bottom: 29px
     &-top
       flex-direction: column
-      margin-top: 63px
+      margin-top: 4px
       text-align: center
       align-items: center
       margin-right: 2px
@@ -1558,44 +1789,55 @@
     &-title
       font-size: 28px
       line-height: 36px
-      margin-right: 1px
+      margin-right: 5px
       margin-bottom: 49px
     &-button
       position: absolute
       margin-top: 717px
       width: 161px
+      margin-right: 7px
+      font-size: 14px
   .big
     &-title
       font-size: 16px
       line-height: 20px
       margin-bottom: 10px
-      margin-left: -33px
+      margin-left: -40px
     &-description
       font-weight: normal
       font-size: 12px
       line-height: 24px
       text-align: left
-      margin-left: -2px
-      letter-spacing: 0px
+      margin-left: 0
+      letter-spacing: 0
     &-text
       align-items: start
       text-align: start
+      width: 171px
+      margin-top: -1px
     &-blog
       margin-right: 8px
       margin-left: 6px
-      margin-bottom: 17px
+      margin-bottom: -7px
+      width: 100%
     &-image
       max-height: 120px
       margin-bottom: 19px
+      max-width: 281px
+      &__item
+        width: 322px
+        height: 118px
   .small
+    &-blog
+      margin-right: 83px
     &-description
       align-items: start
 
       text-align: start
     &-image
-      margin-right: 20px
-      width: 90px
+      margin-right: 21px
       object-fit: cover
+      width: 90px
       height: 90px
     &-title
       font-weight: 500
@@ -1608,13 +1850,19 @@
       line-height: 20px
       margin-top: 0
       margin-bottom: 5px
+    &-link
+      width: 90px
+      height: 90px
+      &__image
+        width: 90px
+        height: 90px
 
   .link
     font-size: 10px
     line-height: 20px
   .subscription
     background-image: url(../img/background.jpg)
-    height: 305px
+    height: 308px
     &-title
       font-size: 28px
       line-height: 36px
@@ -1622,22 +1870,26 @@
       text-align: left
       margin-right: 0
       padding-right: 0px
-      width: 200px
-      margin-left: 8px
-      margin-top: 25px
+      width: 213px
+      margin-left: 4px
+      margin-top: 28px
+      &__word
+        display: block
     &-block
       flex-direction: column
       padding: 0px 24px 80px 0px
       margin-top: 97px
     &-item
-      margin: 8px 0px 12px 9px
+      margin: 8px 0px 12px 4px
       letter-spacing: 0.3px
       width: 272px
       align-items: flex-start
       min-height: 112px
     &-input
-      margin: 18px -39px 18px -83px
+      margin: 9px 0 10px 0
       width: 207px
+      padding-right: 101px
+
     &-form
       flex-direction: column
       margin-top: 0
@@ -1645,27 +1897,31 @@
       width: 272px
     &-button
       width: 250px
-      margin-right: 73px
       letter-spacing: 0.5px
       margin-top: 0
-      min-height: 39px
+      height: 42px
+      margin-right: 18px
+      font-size: 16px
     &-icon
       margin-left: 19px
       margin-top: 19px
+      z-index: 99
+  .invalid
+    &-form
+      font-size: 14px
   .footer
     padding-top: 45px
     margin-right: 8px
     &-wrapper
       margin-right: auto
-      margin-left: auto
+      margin-left: 0px
       max-width: 269px
     &__main
       &-item
         margin-top: 45px
         margin-left: 24px
       &-text
-        margin-top: 11px
-        margin-bottom: 15px
+        margin-top: 8px
         margin-left: -11px
     &__list
       &-title
@@ -1676,6 +1932,7 @@
         line-height: 22px
         color: #183B56
         margin-bottom: 18px
+        margin-left: 0
       &-link
         font-size: 14px
         line-height: 20px
@@ -1694,7 +1951,7 @@
     margin-right: 46px
     margin-bottom: 37px
   .company
-    margin-right: 58px
+    margin-right: 57px
     margin-bottom: 43px
   .footer
     &-bottom
@@ -1712,6 +1969,7 @@
         margin-top: 0
       &-text
         text-align: center
+        margin-top: 8px
   .more
     margin-right: 0
   .footer
@@ -1730,6 +1988,7 @@
           margin-top: 0
         &-text
           text-align: center
+          margin-top: 8px
   .container
     &-subscription
       background-image: url(../img/background.jpg)
@@ -1742,7 +2001,6 @@
       max-height: 99%
       margin-top: 139px
     &__overlay
-      right: 465px
   .modal
     &__info
       margin-top: 0

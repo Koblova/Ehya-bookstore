@@ -3,28 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
   href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Ehya</title>
 </head>
 <body>
-<header class="navbar">
+<header class="navbar navbar--mobile_fixed" id="navbar">
   <div class="container">
     <div class="navbar-top">
-      <a href="/" class="logo"><img src="img/logo.svg" alt="Logo: Ehya" class="logo__image"></a>
+      <a href="/ehya/" class="logo"><img src="img/logo.svg" alt="Logo: Ehya" class="logo__image"></a>
+      <button class="menu-button navbar-top__menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
       <div class="navbar-bottom">
-         <ul class="navbar navbar-menu">
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Рекомендации</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Книги</a></li>
-            <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Блог</a></li>
-         </ul>
-         </div>
-    <button class="navbar-button" data-toggle="modal">Получить</button>
+        <div class="container">
+          <ul class="navbar navbar-menu navbar-menu navbar-menu--left">
+              <li class="navbar-menu__item">
+                <a href="#unreleased" class="navbar-menu__link navbar-menu__link--1">Рекомендации</a></li>
+              <li class="navbar-menu__item">
+                <a href="#book" class="navbar-menu__link navbar-menu__link--2">Книги</a></li>
+              <li class="navbar-menu__item">
+                <a href="#blog" class="navbar-menu__link navbar-menu__link--3">Блог</a></li>
+          </ul>
+          <button class="navbar-button navbar-button--mobile" data-toggle="modal">Получить</button>
+        </div>
+      </div>
+    <button class="navbar-button navbar-button--desktop" data-toggle="modal">Получить</button>
+
     </div>
   </div>
 </header>
@@ -32,7 +46,7 @@
   <hr class="index" />
   <p class="hero-description">Cпасибо за обращение! В ближайшее время наш менеджер свяжется с вами.
   </p>
-  <button class="hero-button__buy">НАЗАД</button>
+  <button class="hero-button__buy" onclick="document.location='/ehya/'">НАЗАД</button>
   <hr class="index" />
 </div>
 <section class="footer">
@@ -46,7 +60,7 @@
           Создайте современный и креативный веб-сайт с crealand
         </p>
         <div class="footer-social">
-          <a href="https://www.google.com/" class="footer-social__item">
+          <a href="https://www.google.com/" class="footer-social__item"  target="_blank">
             <svg
               class="footer-social__svg"
               viewBox="0 0 42 40"
@@ -67,7 +81,7 @@
           <!-- .social__item  -->
           <a
             href="https://twitter.com/?lang=ru"
-            class="footer-social__item"
+            class="footer-social__item" target="_blank"
           >
             <svg
               class="footer-social__svg"
@@ -89,7 +103,7 @@
           <!-- /.social__item -->
           <a
             href="https://www.instagram.com/?hl=ru"
-            class="footer-social__item"
+            class="footer-social__item" target="_blank"
           >
             <svg
               class="footer-social__svg"
@@ -109,7 +123,7 @@
             </svg>
           </a>
           <!-- /.social__item -->
-          <a href="https://ru.linkedin.com/" class="footer-social__item">
+          <a href="https://ru.linkedin.com/" class="footer-social__item" target="_blank">
             <svg
               class="footer-social__svg"
               viewBox="0 0 40 40"
@@ -136,19 +150,19 @@
         <h3 class="footer__list-title">Продукт</h3>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Лэндинг</a>
+            <a href="#" class="link footer__list-link" target="_blank">Лэндинг</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Функции</a>
+            <a href="#" class="link footer__list-link" target="_blank">Функции</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Документация</a>
+            <a href="#" class="link footer__list-link" target="_blank">Документация</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Скидки</a>
+            <a href="#" class="link footer__list-link" target="_blank">Скидки</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Расценки</a>
+            <a href="#" class="link footer__list-link"  target="_blank">Расценки</a>
           </li>
         </ul>
       </div>
@@ -157,37 +171,37 @@
         <h3 class="footer__list-title">Сервисы</h3>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Документация</a>
+            <a href="#" class="link footer__list-link" target="_blank">Документация</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Дизайн</a>
+            <a href="#" class="link footer__list-link" target="_blank">Дизайн</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Темы</a>
+            <a href="#" class="link footer__list-link" target="_blank">Темы</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Илюстрации</a>
+            <a href="#" class="link footer__list-link" target="_blank">Илюстрации</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">UI Kit</a>
+            <a href="#" class="link footer__list-link" target="_blank">UI Kit</a>
           </li>
         </ul>
       </div>
       <!-- ./footer__secondary-item -->
       <div class="footer__secondary-item company">
-        <h3 class="footer__list-title">Компания</h3>
+        <h3 class="footer__list-title footer__list-title--w1">Компания</h3>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">О нас</a>
+            <a href="#" class="link footer__list-link" target="_blank">О нас</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Условия</a>
+            <a href="#" class="link footer__list-link" target="_blank">Условия</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Privacy Policy</a>
+            <a href="#" class="link footer__list-link" target="_blank">Privacy Policy</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Careers</a>
+            <a href="#" class="link footer__list-link" target="_blank">Careers</a>
           </li>
         </ul>
       </div>
@@ -196,13 +210,13 @@
         <h3 class="footer__list-title">Еще..</h3>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Документация</a>
+            <a href="#" class="link footer__list-link" target="_blank">Документация</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Лицензия</a>
+            <a href="#" class="link footer__list-link" target="_blank">Лицензия</a>
           </li>
           <li class="footer__list-item">
-            <a href="#" class="link footer__list-link">Изменения</a>
+            <a href="#" class="link footer__list-link" target="_blank">Изменения</a>
           </li>
         </ul>
       </div>
@@ -224,9 +238,64 @@
   </div>
   <!-- /.container -->
 </section>
+<a href="#navbar" class="to-top">
+<img src="img/995BF76D.png" alt="Наверх">
+</a>
+<div class="modal" id="booking-modal">
+<div class="modal__overlay">
+  <div class="modal__dialog" id="modal-dialog">
+    <a href="#" class="modal__close">
+      <img src="img/close.svg" alt="close icon" />
+    </a>
+    <h3 class="modal__title modal__title--message">Заказ книги</h3>
+    <form action="send.php" method="POST" class="modal__form form">
+      <input
+        type="text"
+        class="input modal__input"
+        placeholder="Ваше имя*"
+        name="name"
+        required
+        minlength="2"
+      />
+      <input
+        type="tel"
+        class="input modal__input phone"
+        placeholder="Номер телефона*"
+        name="phone"
+        id="phone-2"
+        required
+        minlength="15"
+      />
+      <input
+        type="email"
+        class="input modal__input"
+        placeholder="Почта*"
+        name="email"
+        required
+      />
+      <textarea
+        class="massage modal__massage"
+        cols="30"
+        rows="10"
+        placeholder="Сообщение"
+        name="massage"
+      ></textarea>
+      <div class="modal__button-wrapper">
+        <button class="button modal__button">Отправить</button>
+        <span class="modal__info">*&nbsp;Обязательные&nbsp;поля</span>
+      </div>
+    </form>
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal__overlay -->
+</div>
+<!-- /.modal -->
+<script src="js/aos.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

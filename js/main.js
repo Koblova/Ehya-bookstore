@@ -157,13 +157,13 @@ $(document).ready(function () {
       $(".modal__dialog").removeClass("modal__dialog--visible");
     }
   });
-
+/*
   //закрытие при клике мимо окна
   $(document).click( function(event){
     if ( $(event.target).closest('.modal').length ) 
     $('.modal').fadeOut();
   });
-
+*/
   //открывается при нажатии на кнопку
   function openModal() {
     var modalOverlay = $(".modal__overlay");
@@ -242,19 +242,22 @@ $(document).ready(function () {
           slidesPerView: 2,
           spaceBetween: 10,
           grid: {
-            rows: 2,
+            rows: 4,
           },
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 10,
           grid: {
-            rows: 1,
+            rows: 4,
           },
         },
         992: {
           slidesPerView: 4,
           spaceBetween: 15,
+          grid: {
+            rows: 2,
+          },
         },
         1200: {
           slidesPerView: 4,
@@ -298,5 +301,6 @@ $(document).ready(function () {
         },
       },
     });
-
+    AOS.init();
+    
 });

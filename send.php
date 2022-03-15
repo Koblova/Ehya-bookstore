@@ -10,7 +10,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "Новое обращение Ehya";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
@@ -28,15 +28,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'alina.infinitystudio@gmail.com'; // Логин на почте
-    $mail->Password   = 'L1e2v3i4k5'; // Пароль на почте
+    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'malinina.kirov@ya.ru'; // Логин на почте
+    $mail->Password   = 'k1o2t3'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('alina.infinitystudio@gmail.com', 'Алина Коблова'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('malinina.kirov@ya.ru', 'Алина Коблова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('malinina.kirov@ya.ru');  
+    $mail->addAddress('alina.kirov@mail.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);
