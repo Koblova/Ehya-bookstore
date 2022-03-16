@@ -99,6 +99,9 @@
       margin-left: 329px
       margin-right: 0
   .theme
+    &-swiper
+      &__wrapper
+        max-height: 500px
     &-slide
       &__item
         font-size: 16px
@@ -413,7 +416,8 @@
       &--visible
         display: block
         z-index: 9999999
-        height: 205px
+        max-height: 205px
+        overflow: scroll
     &-button
       &--desktop
         display: none

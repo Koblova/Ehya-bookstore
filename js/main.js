@@ -249,14 +249,14 @@ $(document).ready(function () {
           slidesPerView: 4,
           spaceBetween: 10,
           grid: {
-            rows: 4,
+            rows: 2,
           },
         },
         992: {
           slidesPerView: 4,
           spaceBetween: 15,
           grid: {
-            rows: 2,
+            rows: 1,
           },
         },
         1200: {
@@ -302,5 +302,7 @@ $(document).ready(function () {
       },
     });
     AOS.init();
+    
+    $(button).removeClass('hover');
     
 });
